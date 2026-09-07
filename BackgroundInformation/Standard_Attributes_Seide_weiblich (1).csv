@@ -1,0 +1,51 @@
+﻿id,attribute_group,attribute_name,attribute_value,createdAt,updatedAt
+1,AmazonLister,Hauptmaterial,Seide,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+2,AmazonLister,Materialzusammensetzung,100% Seide,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+3,AmazonLister,browse_node,1981698031,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+4,Shopify-Attribute,barcode_type,EAN,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+5,Shopify-Attribute,product_type,SILK,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+6,unicorn2-OttoMarket,Applikationen,Markenlabel,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+7,unicorn2-OttoMarket,Material,Seide,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+8,unicorn2-OttoMarket,Anlässe,"Frühlingsmode, Abendmode, Casualmode, Partymode",2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+9,unicorn2-OttoMarket,Zielgruppe,Erwachsene,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+10,unicorn2-OttoMarket,Materialeigenschaften,"glatt, glänzend, kühlend",2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+11,unicorn2-OttoMarket,Geschlecht,weiblich,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+12,unicorn2-OttoMarket,Materialart,gewebt,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+13,unicorn2-OttoMarket,Pflegehinweise,Handwäsche mit kaltem Wasser und mit mildem Fein- oder Seidenwaschmittel. Zum Trocknen flach ausbreiten -direkte Sonneneinstrahlung vermeiden - nach dem Trocknen auf der Rückseide bei mittlerer Temperatur bügeln.,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+14,Artikel,Brand,MayTree,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+15,Artikel,Höhe,1,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+16,unicorn2-OttoMarket,Set-Info,-,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+17,Shopify-Metafields,meta_condition:mm-google-shopping,New,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+18,Shopify-Metafields,meta_gender:mm-google-shopping,female,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+19,Shopify-Metafields,meta_material:mm-google-shopping,Silk,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+20,Shopify-Metafields,meta_age_group:mm-google-shopping,Adult,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+21,unicorn2-OttoMarket,Anzahl Teile,1,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+22,AmazonLister,department_name,Damen,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+23,AmazonLister,country_of_origin,China,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+24,AmazonLister,supplier_declared_material_regulation1,N,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+25,AmazonLister,seasons,Ganzjahresartikel,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+26,unicorn2-OttoMarket,Art Strickwaren,Halstücher,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+27,unicorn2-OttoMarket,Verschlussart,ohne Verschluss,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+28,SXC-OttoMarket,Zielgruppe1,Erwachsene,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+29,AmazonLister,webart,gewebt,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+30,AmazonLister,AMZ-Versandgruppe,Intergate2,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+31,AmazonLister,Hersteller,Intergate,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+32,unicorn2-OttoMarket,Set-Typ,Stück,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+33,unicorn2-OttoMarket,US-Größen,M,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+34,AmazonLister,feed_product_type,scarf,2025-12-30T10:10:41.373Z,2025-12-30T10:10:41.373Z
+37,JTL,Hersteller,Intergate,2026-01-12T11:14:01.516Z,2026-01-12T11:14:16.697Z
+38,JTL,Warengruppe,Seidentücher,2026-01-12T11:14:18.607Z,2026-01-12T11:15:05.629Z
+39,JTL,Herkunftsland,CN,2026-01-12T11:15:07.521Z,2026-01-12T11:15:29.183Z
+40,JTL,TARIC-Code,62141000,2026-01-12T11:15:33.937Z,2026-01-12T11:15:49.621Z
+41,JTL,"Verkaufskanal [Amazon Lister (DE)]: Verkaufskanal aktiv
+",Y,2026-01-12T11:15:51.714Z,2026-01-12T11:16:14.935Z
+42,JTL,"Verkaufskanal [Kaufland (Kaufland.de)]: Verkaufskanal aktiv
+",Y,2026-01-12T11:16:16.080Z,2026-01-12T11:16:37.018Z
+43,JTL,"Verkaufskanal [TikTok Shop (7496185151326161614)]: Verkaufskanal aktiv
+",Y,2026-01-12T11:16:37.902Z,2026-01-12T11:16:59.229Z
+44,JTL,"Verkaufskanal [Maytree]: Verkaufskanal aktiv
+",Y,2026-01-12T11:17:00.264Z,2026-01-12T11:17:17.162Z
+45,JTL,"Verkaufskanal [Intergate Consulting & Trade GmbH (1081109)]: Verkaufskanal aktiv
+",Y,2026-01-12T11:17:18.047Z,2026-01-12T11:17:30.747Z
+35,JTL,Steuerklasse,normaler steuersatz,2026-01-12T11:13:11.449Z,2026-01-17T15:05:00.535Z
+36,JTL,Steuersatz in%,19,2026-01-12T11:13:44.336Z,2026-01-17T15:05:16.356Z

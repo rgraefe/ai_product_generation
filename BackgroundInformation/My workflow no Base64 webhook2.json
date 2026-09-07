@@ -1,0 +1,2124 @@
+{
+  "name": "My workflow no Base64 webhook2",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "seidentuch-damen",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d3868c38-ef64-4f29-8239-c3f5b46cdcbd"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "f923859b-f8af-4db4-86fc-2317d096872a",
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "seidentuch-herren",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a5058d0c-61e2-42da-b1ef-5e512c3ab609",
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "armband",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "e1ada8f9-56aa-40e1-9a6a-5f7d3d4a664f",
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "brosche",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "6a1a88f2-e5b5-4c7a-8d61-9b0f04edfefe",
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "kette",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "3100bb21-8eed-4f3d-b77e-2b7dbdc25a74",
+                    "leftValue": "={{ $json.body.product_category }}",
+                    "rightValue": "ohrring",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        2176,
+        -384
+      ],
+      "id": "2bf84d82-b5dd-4299-acf1-e66a84b71d3f",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "odxXgt8LiDYskdrr",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Seide_weiblich",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/odxXgt8LiDYskdrr"
+        },
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -1184
+      ],
+      "id": "9e164e02-09a8-433b-8203-873f9715d38c",
+      "name": "attributes_Silk_female"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "1mTfbfpJ5SgLYCfl",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Seide_männlich",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/1mTfbfpJ5SgLYCfl"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -1024
+      ],
+      "id": "e5585f89-6cae-47b5-82e0-b9fde849cc89",
+      "name": "attributes_Silk_male"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "cX91VdC5HAO0Bxkj",
+          "mode": "list",
+          "cachedResultName": "AttributBeschreibung",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/cX91VdC5HAO0Bxkj"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        1728,
+        -240
+      ],
+      "id": "b89c59fc-f6a7-445a-afe2-9240aca4c678",
+      "name": "attribute_descriptions"
+    },
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "modelId": {
+          "__rl": true,
+          "value": "models/nano-banana-pro-preview",
+          "mode": "list",
+          "cachedResultName": "models/nano-banana-pro-preview"
+        },
+        "text": "Du bist eine strikte Produktdaten-Extraktions-Engine.\nGib ausschließlich gültiges JSON zurück.\nKein Markdown. Keine Erklärungen. Kein zusätzlicher Text.\n\nAUSGABESTRUKTUR (muss exakt eingehalten werden):\n{\n  \"product_type\": eines von [\"silk_scarf\",\"cashmere_scarf\",\"brooch\",\"necklace\",\"earrings\",\"bracelet\",\"other\"],\n  \"visual_facts\": {\n    \"main_color\": string,\n    \"dominant_colors\": [string],\n    \"motif\": string,\n    \"materials_visible\": [string],\n    \"style_keywords\": [string],\n    \"has_rhinestones\": boolean,\n    \"has_pearls\": boolean\n  },\n  \"text_facts\": {\n    \"input_title\": string,\n    \"input_size\": string\n  },\n  \"uncertainties\": [string]\n}\n\nVERPFLICHTENDE REGELN:\n- Die JSON-Struktur und alle Schlüssel müssen exakt eingehalten werden.\n- Alle Felder MÜSSEN vorhanden sein.\n- JSON-Schlüssel und Enum-Werte dürfen NICHT übersetzt werden.\n- Es dürfen KEINE zusätzlichen Felder erzeugt werden.\n\nREGELN ZU VISUAL_FACTS:\n- Alle Inhalte auf Deutsch.\n- Alle Angaben müssen ausschließlich aus den Produktbildern ableitbar sein.\n- Materialien nur angeben, wenn sie eindeutig sichtbar sind.\n- Farben sachlich und neutral beschreiben.\n- Stilbegriffe nüchtern (z. B. „elegant“, „verspielt“, „klassisch“, „minimalistisch“).\n\nREGELN ZU TEXT_FACTS:\n- \"input_title\" MUSS exakt dem übergebenen Produkttitel entsprechen.\n- \"input_size\" MUSS exakt der übergebenen Produktgröße entsprechen.\n- Es dürfen keine Interpretationen, Ergänzungen oder Umformulierungen erfolgen.\n\nUNCERTAINTIES:\n- Jede Unsicherheit als kurzen deutschen Satz eintragen.\n- Wenn keine Unsicherheiten bestehen, MUSS ein leeres Array [] zurückgegeben werden.\n\nEINGABE:\n- Produkttitel: {{product_title}}\n- Produktgröße: {{product_size}}\n- Produktbilder: als Bilddaten in dieser Anfrage enthalten\n\nAUFGABE:\nBestimme den product_type und fülle die Struktur mit neutralen, ausschließlich sicht- und textbasierten Fakten gemäß den obigen Regeln.\n",
+        "inputType": "binary",
+        "binaryPropertyName": "image",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        1504,
+        176
+      ],
+      "id": "6d191a46-99e7-447a-9d64-5845a5b33ebb",
+      "name": "Analyze an image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        2384,
+        176
+      ],
+      "id": "8aa7458e-2ca8-4b18-8541-ed0afaef0409",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "jsCode": "function extractJsonFromMarkdown(text) {\n  if (!text || typeof text !== \"string\") return null;\n\n  // Extract JSON inside a fenced code block ```json ... ``` or ``` ... ```\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) return fenced[1].trim();\n\n  // Fallback: slice first {...} block\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\nfunction assert(condition, message) {\n  if (!condition) throw new Error(\"SchemaFail: \" + message);\n}\n\n// 1) Get raw Gemini text (your node output path)\nconst rawText = $json?.content?.parts?.[0]?.text;\nassert(rawText, \"Missing content.parts[0].text from Gemini output\");\n\n// 2) Extract JSON string from markdown fence\nconst jsonString = extractJsonFromMarkdown(rawText);\nassert(jsonString, \"Could not extract JSON from Gemini text output\");\n\n// 3) Parse JSON\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  throw new Error(\"JSON parse failed: \" + e.message + \"\\nExtracted:\\n\" + jsonString);\n}\n\n// 4) Overwrite placeholders with REAL inputs from the same item\n// (this fixes cases where the model repeats \"{{product_title}}\" literally)\nconst inputTitle = $json.product_title ?? $json.productTitle ?? \"\";\nconst inputSize  = $json.product_size  ?? $json.productSize  ?? \"\";\n\nobj.text_facts = obj.text_facts && typeof obj.text_facts === \"object\" ? obj.text_facts : {};\nif (inputTitle) obj.text_facts.input_title = String(inputTitle);\nif (inputSize)  obj.text_facts.input_size  = String(inputSize);\n\n// 5) Minimal validation (lightweight Pydantic)\nconst allowedTypes = [\"silk_scarf\",\"cashmere_scarf\",\"brooch\",\"necklace\",\"earrings\",\"bracelet\",\"other\"];\n\nassert(typeof obj.product_type === \"string\", \"product_type must be string\");\nassert(allowedTypes.includes(obj.product_type), \"Invalid product_type: \" + obj.product_type);\n\nassert(obj.visual_facts && typeof obj.visual_facts === \"object\", \"visual_facts missing or not object\");\nconst vf = obj.visual_facts;\n\nfor (const k of [\"main_color\",\"dominant_colors\",\"motif\",\"materials_visible\",\"style_keywords\",\"has_rhinestones\",\"has_pearls\"]) {\n  assert(k in vf, \"visual_facts.\" + k + \" missing\");\n}\n\nassert(typeof vf.main_color === \"string\", \"visual_facts.main_color must be string\");\nassert(Array.isArray(vf.dominant_colors), \"visual_facts.dominant_colors must be array\");\nassert(typeof vf.motif === \"string\", \"visual_facts.motif must be string\");\nassert(Array.isArray(vf.materials_visible), \"visual_facts.materials_visible must be array\");\nassert(Array.isArray(vf.style_keywords), \"visual_facts.style_keywords must be array\");\nassert(typeof vf.has_rhinestones === \"boolean\", \"visual_facts.has_rhinestones must be boolean\");\nassert(typeof vf.has_pearls === \"boolean\", \"visual_facts.has_pearls must be boolean\");\n\nassert(obj.text_facts && typeof obj.text_facts === \"object\", \"text_facts missing or not object\");\nassert(typeof obj.text_facts.input_title === \"string\", \"text_facts.input_title must be string\");\nassert(typeof obj.text_facts.input_size === \"string\", \"text_facts.input_size must be string\");\n\nassert(Array.isArray(obj.uncertainties), \"uncertainties must be array\");\n\n// 6) Return clean object for next nodes\nreturn [\n  {\n    json: {\n      product_understanding: obj,\n      _debug: {\n        extracted_length: jsonString.length,\n        used_title: obj.text_facts.input_title,\n        used_size: obj.text_facts.input_size\n      }\n    }\n  }\n];\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1728,
+        176
+      ],
+      "id": "be182e38-e09f-4be5-b1f3-91ddaf60f98a",
+      "name": "Product Understanding"
+    },
+    {
+      "parameters": {
+        "jsCode": "function extractJsonFromMarkdown(text) {\n  if (!text || typeof text !== \"string\") return null;\n\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) return fenced[1].trim();\n\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\nfunction assert(condition, message) {\n  if (!condition) throw new Error(\"AttributeSchemaFail: \" + message);\n}\n\n// 1) Raw text from Gemini\nconst rawText = $json?.content?.parts?.[0]?.text;\nassert(rawText, \"Missing Gemini output text\");\n\n// 2) Extract JSON\nconst jsonString = extractJsonFromMarkdown(rawText);\nassert(jsonString, \"Could not extract JSON\");\n\n// 3) Parse\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  throw new Error(\"JSON parse failed: \" + e.message);\n}\n\n// 4) Validate minimal attribute schema\nfor (const k of [\"attribute_group\",\"attribute_name\",\"attribute_value\",\"confidence\",\"warnings\"]) {\n  assert(k in obj, \"Missing field: \" + k);\n}\nassert([\"general\",\"jtl\"].includes(obj.attribute_type), \"Invalid attribute_type\");\nassert(Array.isArray(obj.warnings), \"warnings must be array\");\nassert(typeof obj.confidence === \"number\", \"confidence must be number\");\n\n// Optional: enforce enum behavior if allowed_values exist\nif (Array.isArray($json.allowed_values) && $json.allowed_values.length > 0) {\n  if (obj.value !== null && !$json.allowed_values.includes(obj.value)) {\n    obj.warnings.push(\"not_in_allowed_values\");\n    obj.value = null;\n  }\n}\n\n// 5) Return ONE clean attribute result\nreturn [{\n  json: {\n    obj\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2960,
+        256
+      ],
+      "id": "46b01316-b662-4097-8569-b7a847d85ce1",
+      "name": "ValidateAttribut"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "destinationFieldName": "attribute_results",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        2672,
+        -112
+      ],
+      "id": "98918ba3-0cf4-4da7-b041-08a6e8475e9a",
+      "name": "AggregateAttributes"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are a neutral product content generator.\nReturn JSON only. No markdown. No extra keys.\n\nLANGUAGE REQUIREMENT (CRITICAL):\n- All generated text MUST be in German.\n- Do NOT use English words, phrases, or sentence structures.\n- If any input data is in another language, translate it to correct, natural German.\n\nOUTPUT STRUCTURE (must match exactly):\n{\n  \"headline\": string,\n  \"short_description\": string,\n  \"long_description\": string,\n  \"key_features\": [string]\n}\n\nRULES:\n- Do not invent facts.\n- Do not use marketing superlatives.\n- Do not mention country of origin\n- No SEO optimization.\n- No platform-specific language.\n- Use neutral, factual German (informative, not promotional).\n- Base everything strictly on the provided data.\n\nPRODUCT CONTEXT (trusted JSON, do not reinterpret):\n{{ JSON.stringify($node[\"Product Understanding\"].json.product_understanding, null, 2) }}\n\nPRODUCT INPUTS (trusted):\n- Titel: {{$node[\"ProductFields\"].json.product_title}}\n- SKU: {{$node[\"ProductFields\"].json.sku}}\n- Marke: {{$node[\"ProductFields\"].json.brand}}\n- Motiv / Modell: {{$node[\"Product Understanding\"].json.product_understanding.visual_facts.motif}}\n- Material: {{$node[\"ProductFields\"].json.Material}}\n- Produkttyp: {{$node[\"ProductFields\"].json.produkt_typ}}\n- Größe: {{$node[\"ProductFields\"].json.product_size}} cm\n- Gewicht: {{$node[\"ProductFields\"].json.product_weight}} g\n\nATTRIBUTES (JSON):\n{{ JSON.stringify($json.attributes_all, null, 2) }}\n\nTASK:\nCreate a neutral master product description in German that can be reused for multiple platforms. Include information on product size if available.\n\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        -128,
+        1376
+      ],
+      "id": "1aa45847-2a31-424c-a7af-b3cc28328ccf",
+      "name": "MasterContent",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1952,
+        176
+      ],
+      "id": "a7da4aae-c120-4245-b63f-f14ab375ed36",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nconst normalized = items.map(item => {\n  const d = item.json;\n\n  return {\n    attribute_group: d.attribute_group,\n    attribute_name: d.attribute_name,\n    attribute_value: d.attribute_value,\n    attribute_type: \"enum\",      // oder single_line_text – je nach Attribut\n    confidence: 1,\n    warnings: []\n  };\n});\n\nreturn [\n  {\n    json: {\n      attributes_default: normalized\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2752,
+        -384
+      ],
+      "id": "3830a3e1-0704-42a5-a8aa-f1d199d50c5f",
+      "name": "NormalizeDefault"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Expecting ONE item with attribute_results: [{ obj: {...} }, ...]\nconst results = $json.attribute_results;\n\nif (!Array.isArray(results)) {\n  throw new Error(\"attribute_results is not an array\");\n}\n\nconst flattened = results.map(r => {\n  if (!r.obj || typeof r.obj !== \"object\") {\n    throw new Error(\"Missing obj in attribute_results entry\");\n  }\n\n  return {\n    attribute_group: r.obj.attribute_group,\n    attribute_name: r.obj.attribute_name,\n    attribute_value: r.obj.attribute_value,\n    attribute_type: r.obj.attribute_type,\n    confidence: r.obj.confidence ?? 1,\n    warnings: Array.isArray(r.obj.warnings) ? r.obj.warnings : []\n  };\n});\n\nreturn [\n  {\n    json: {\n      attributes_generated: flattened\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2960,
+        -112
+      ],
+      "id": "44c6210a-61c5-4cc6-9a11-3de1dfe0037f",
+      "name": "NormalizeGenerated"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 1) Read all incoming items (from both branches)\nconst items = $input.all().map(i => i.json);\n\n// 2) Collect arrays ONLY (no implicit item guessing)\nlet defaults = [];\nlet generated = [];\n\nfor (const j of items) {\n  if (Array.isArray(j.attributes_default)) {\n    defaults = defaults.concat(j.attributes_default);\n  }\n  if (Array.isArray(j.attributes_generated)) {\n    generated = generated.concat(j.attributes_generated);\n  }\n}\n\n// 3) Hard guarantee: arrays only\nif (!Array.isArray(defaults)) defaults = [];\nif (!Array.isArray(generated)) generated = [];\n\n// 4) Deduplicate: generated overrides defaults\nfunction key(a) {\n  return `${a.attribute_group ?? \"\"}::${a.attribute_name}`;\n}\n\nconst map = new Map();\n\n// defaults first\nfor (const a of defaults) {\n  map.set(key(a), a);\n}\n\n// generated overwrites\n// generated overwrites ONLY if it has a value\nfor (const a of generated) {\n  const k = key(a);\n\n  if (\n    !map.has(k) ||\n    (a.attribute_value !== null && a.attribute_value !== undefined)\n  ) {\n    map.set(k, a);\n  }\n}\n\n// 5) Build helper KV-store (attribute_name → attribute_value)\nconst attributes_kv = {};\n\nfor (const a of map.values()) {\n  if (\n    typeof a.attribute_name === \"string\" &&\n    a.attribute_name.length > 0\n  ) {\n    attributes_kv[a.attribute_name] = a.attribute_value;\n  }\n}\n\n// 6) Final, clean output — ONE ITEM\nreturn [{\n  json: {\n    attributes_all: Array.from(map.values()),\n    attributes_kv, // 👈 helper object for fast access\n    _debug: {\n      defaults_count: defaults.length,\n      generated_count: generated.length,\n      final_count: map.size,\n      kv_keys: Object.keys(attributes_kv).length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3408,
+        -208
+      ],
+      "id": "ef649e4e-65c6-42de-8674-c3071088287a",
+      "name": "MergeAllAttributes"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        3184,
+        -208
+      ],
+      "id": "4c82cbd8-5480-4d4d-be91-84931b089877",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "jsCode": "function extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    throw new Error(\"LLM output is not a string\");\n  }\n\n  // fenced ```json ... ```\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  // fallback: first {...}\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  throw new Error(\"Could not extract JSON from LLM output\");\n}\n\nfunction assert(cond, msg) {\n  if (!cond) throw new Error(\"MasterContentSchemaFail: \" + msg);\n}\n\n// 1) get raw LLM output\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message;\n\nassert(rawText, \"Missing LLM output text\");\n\n// 2) extract JSON string\nconst jsonString = extractJson(rawText);\n\n// 3) parse JSON\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  throw new Error(\"JSON parse failed: \" + e.message + \"\\nExtracted:\\n\" + jsonString);\n}\n\n// 4) structure validation\nfor (const k of [\"headline\", \"short_description\", \"long_description\", \"key_features\"]) {\n  assert(k in obj, \"Missing field: \" + k);\n}\n\nassert(typeof obj.headline === \"string\", \"headline must be string\");\nassert(typeof obj.short_description === \"string\", \"short_description must be string\");\nassert(typeof obj.long_description === \"string\", \"long_description must be string\");\nassert(Array.isArray(obj.key_features), \"key_features must be array\");\n\n// 5) content sanity checks\nassert(obj.headline.trim().length > 5, \"headline too short\");\nassert(obj.short_description.trim().length > 20, \"short_description too short\");\nassert(obj.long_description.trim().length > 80, \"long_description too short\");\n\nassert(\n  obj.key_features.length >= 3,\n  \"key_features must contain at least 3 items\"\n);\n\nobj.key_features.forEach((f, i) => {\n  assert(typeof f === \"string\", `key_features[${i}] must be string`);\n  assert(f.trim().length > 5, `key_features[${i}] too short`);\n});\n\n// 6) German language heuristic (lightweight, robust)\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" für \", \" nicht \", \" ohne \",\n  \"eine\", \"einer\", \"dieses\", \"diese\", \"hochwertig\"\n];\n\nconst fullText =\n  obj.headline + \" \" +\n  obj.short_description + \" \" +\n  obj.long_description;\n\nconst germanScore = germanMarkers.filter(m => fullText.toLowerCase().includes(m)).length;\n\nassert(\n  germanScore >= 2,\n  \"Text does not appear to be German\"\n);\n\n// 7) success – return clean object\nreturn [{\n  json: {\n    master_content: obj,\n    language: \"deutsch\",\n    _debug: {\n      german_marker_hits: germanScore,\n      headline_length: obj.headline.length,\n      short_desc_length: obj.short_description.length,\n      long_desc_length: obj.long_description.length,\n      key_features_count: obj.key_features.length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        1376
+      ],
+      "id": "b3eb3c29-76d7-41dd-94a7-c835570f492f",
+      "name": "ValidateMasterContent"
+    },
+    {
+      "parameters": {
+        "options": {
+          "delimiter": ";",
+          "fileName": "jtl_kategorien.csv",
+          "headerRow": true
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1280,
+        -240
+      ],
+      "id": "db8b4317-1c19-4d47-8d89-47bc50dca8d8",
+      "name": "Convert to File2"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "=C:\\n8n\\data\\n8n_kategorien-{{ $('ProductFields').item.json.sku }}.csv",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        1504,
+        -240
+      ],
+      "id": "95693ad2-0bf7-4407-9d2b-f7331c558663",
+      "name": "Read/Write Files from Disk2"
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "value": "product_master_content",
+          "mode": "list",
+          "cachedResultName": "product_master_content"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "version": 1,
+            "sku": "={{$node[\"ProductFields\"].json.sku}}",
+            "product_type": "={{$node[\"Product Understanding\"].json.product_understanding.product_type}}",
+            "headline": "={{$json.master_content.headline}}",
+            "short_description": "={{$json.master_content.short_description}}",
+            "long_description": "={{$json.master_content.long_description}}",
+            "key_features": "={{Object.assign({},$json.master_content.key_features)}}",
+            "source_attributes": "={{Object.assign({},$node[\"MergeAllAttributes\"].json.attributes_all)}}",
+            "product_understanding": "={{Object.assign({},$node[\"Product Understanding\"].json.product_understanding)}}",
+            "language": "de",
+            "created_at": "2026-01-03T15:55:41",
+            "updated_at": "2026-01-03T15:55:44"
+          },
+          "matchingColumns": [
+            "sku",
+            "language",
+            "version"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "sku",
+              "displayName": "sku",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "product_type",
+              "displayName": "product_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "headline",
+              "displayName": "headline",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "short_description",
+              "displayName": "short_description",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "long_description",
+              "displayName": "long_description",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "key_features",
+              "displayName": "key_features",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "source_attributes",
+              "displayName": "source_attributes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "product_understanding",
+              "displayName": "product_understanding",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "language",
+              "displayName": "language",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "version",
+              "displayName": "version",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "updated_at",
+              "displayName": "updated_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        720,
+        1376
+      ],
+      "id": "1b9143c2-3b44-49b8-ba91-92d977e42de2",
+      "name": "Insert or update rows in a table1",
+      "credentials": {
+        "postgres": {
+          "id": "K5CNDXJY1tuTdbRg",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================\n   Fail-soft Amazon Description Validator & Normalizer\n   ================================================================ */\n\n/* ------------------------------------------------------------------\n   Helpers\n------------------------------------------------------------------ */\n\nconst errors = [];\n\nfunction softAssert(cond, msg) {\n  if (!cond) {\n    errors.push(msg);\n    return false;\n  }\n  return true;\n}\n\nfunction errorWrap(msg, original) {\n  return `ERROR!: ${msg}\\n\\nORIGINAL:\\n${original ?? \"\"}`;\n}\n\nfunction extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    return null;\n  }\n\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\n/* ------------------------------------------------------------------\n   1) get raw LLM output\n------------------------------------------------------------------ */\n\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message ??\n  \"\";\n\nif (!rawText || typeof rawText !== \"string\") {\n  return [{\n    json: {\n      amazon_description: {\n        title: errorWrap(\"Missing LLM output text\", \"\"),\n        description: errorWrap(\"Missing LLM output text\", \"\"),\n        bullets: [errorWrap(\"Missing LLM output text\", \"\")],\n        backend_keywords: errorWrap(\"Missing LLM output text\", \"\")\n      },\n      _errors: [\"Missing LLM output text\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   2) extract JSON\n------------------------------------------------------------------ */\n\nconst jsonString = extractJson(rawText);\n\nif (!jsonString) {\n  return [{\n    json: {\n      amazon_description: {\n        title: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        description: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        bullets: [errorWrap(\"Could not extract JSON from LLM output\", rawText)],\n        backend_keywords: errorWrap(\"Could not extract JSON from LLM output\", rawText)\n      },\n      _errors: [\"Could not extract JSON from LLM output\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   3) parse JSON\n------------------------------------------------------------------ */\n\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  return [{\n    json: {\n      amazon_description: {\n        title: errorWrap(\"JSON parse failed\", jsonString),\n        description: errorWrap(e.message, jsonString),\n        bullets: [errorWrap(e.message, jsonString)],\n        backend_keywords: errorWrap(e.message, jsonString)\n      },\n      _errors: [\"JSON parse failed: \" + e.message]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   4) structure validation\n------------------------------------------------------------------ */\n\nsoftAssert(\"amazon_description\" in obj, \"Missing amazon_description object\");\n\nconst ad = obj.amazon_description ?? {};\n\nsoftAssert(typeof ad === \"object\", \"amazon_description must be an object\");\nsoftAssert(typeof ad.title === \"string\", \"title must be string\");\nsoftAssert(typeof ad.description === \"string\", \"description must be string\");\nsoftAssert(Array.isArray(ad.bullets), \"bullets must be array\");\nsoftAssert(typeof ad.backend_keywords === \"string\", \"backend_keywords must be string\");\n\nad.title = typeof ad.title === \"string\" ? ad.title : \"\";\nad.description = typeof ad.description === \"string\" ? ad.description : \"\";\nad.bullets = Array.isArray(ad.bullets) ? ad.bullets : [];\nad.backend_keywords = typeof ad.backend_keywords === \"string\" ? ad.backend_keywords : \"\";\n\n/* ------------------------------------------------------------------\n   5) content sanity checks\n------------------------------------------------------------------ */\n\n/* Title */\nsoftAssert(ad.title.trim().length >= 20, \"title too short\");\nsoftAssert(ad.title.length <= 200, \"title exceeds Amazon limit (200 chars)\");\n\n/* Description */\nsoftAssert(ad.description.trim().length >= 120, \"description too short\");\nsoftAssert(ad.description.length <= 2000, \"description exceeds Amazon limit (2000 chars)\");\nsoftAssert(!/<[^>]+>/.test(ad.description), \"description must not contain HTML\");\n\n/* Bullets */\nsoftAssert(ad.bullets.length >= 3 && ad.bullets.length <= 5, \"bullets must contain 3–5 items\");\n\nad.bullets = ad.bullets.map((b, i) => {\n  if (typeof b !== \"string\") {\n    errors.push(`bullets[${i}] must be string`);\n    return errorWrap(`bullets[${i}] must be string`, String(b));\n  }\n  if (b.trim().length < 30) {\n    errors.push(`bullets[${i}] too short`);\n  }\n  if (b.length > 255) {\n    errors.push(`bullets[${i}] exceeds Amazon limit (255 chars)`);\n  }\n  return b;\n});\n\n/* Backend keywords */\nsoftAssert(ad.backend_keywords.trim().length >= 50, \"backend_keywords too short\");\nsoftAssert(ad.backend_keywords.length <= 1000, \"backend_keywords exceeds Amazon limit (1000 chars)\");\n\n/* ------------------------------------------------------------------\n   6) German language heuristic\n------------------------------------------------------------------ */\n\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" für \", \" ohne \", \" nicht \",\n  \"hochwertig\", \"damen\", \"elegant\",\n  \"handwäsche\", \"geeignet\", \"pflege\"\n];\n\nconst fullText =\n  ad.title + \" \" +\n  ad.description + \" \" +\n  ad.bullets.join(\" \") + \" \" +\n  ad.backend_keywords;\n\nconst germanScore = germanMarkers.filter(m =>\n  fullText.toLowerCase().includes(m)\n).length;\n\nsoftAssert(germanScore >= 3, \"Text does not appear to be German\");\n\n/* ------------------------------------------------------------------\n   7) finalize errors into fields\n------------------------------------------------------------------ */\n\nif (errors.length > 0) {\n  const msg = errors.join(\" | \");\n  ad.title = errorWrap(msg, ad.title);\n  ad.description = errorWrap(msg, ad.description);\n  ad.bullets = ad.bullets.map(b => errorWrap(msg, b));\n  ad.backend_keywords = errorWrap(msg, ad.backend_keywords);\n}\n\n/* ------------------------------------------------------------------\n   8) return\n------------------------------------------------------------------ */\n\nreturn [{\n  json: {\n    amazon_description: ad,\n    _errors: errors,\n    _debug: {\n      error_count: errors.length,\n      german_marker_hits: germanScore,\n      title_length: ad.title.length,\n      description_length: ad.description.length,\n      bullets_count: ad.bullets.length,\n      backend_keywords_length: ad.backend_keywords.length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        1136
+      ],
+      "id": "a7a8f53e-078f-4be5-b562-10317809f4a5",
+      "name": "Amazon validation1"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================\n   Fail-soft TikTok Description Validator & Normalizer\n   - NEVER throws\n   - Errors are written into fields as:\n     \"ERROR!: <msg>\\n\\nORIGINAL:\\n<original>\"\n   ================================================================ */\n\n/* ------------------------------------------------------------------\n   Helpers\n------------------------------------------------------------------ */\n\nconst errors = [];\n\nfunction softAssert(cond, msg) {\n  if (!cond) {\n    errors.push(msg);\n    return false;\n  }\n  return true;\n}\n\nfunction errorWrap(msg, original) {\n  return `ERROR!: ${msg}\\n\\nORIGINAL:\\n${original ?? \"\"}`;\n}\n\nfunction extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    return null;\n  }\n\n  // fenced ```json ... ```\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  // fallback: first {...}\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\n/* ------------------------------------------------------------------\n   1) get raw LLM output (fail-soft)\n------------------------------------------------------------------ */\n\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message ??\n  \"\";\n\nif (!rawText || typeof rawText !== \"string\") {\n  return [{\n    json: {\n      tiktok_description: {\n        titel: errorWrap(\"Missing LLM output text\", \"\"),\n        description: errorWrap(\"Missing LLM output text\", \"\")\n      },\n      _errors: [\"Missing LLM output text\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   2) extract JSON\n------------------------------------------------------------------ */\n\nconst jsonString = extractJson(rawText);\n\nif (!jsonString) {\n  return [{\n    json: {\n      tiktok_description: {\n        titel: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        description: errorWrap(\"Could not extract JSON from LLM output\", rawText)\n      },\n      _errors: [\"Could not extract JSON from LLM output\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   3) parse JSON\n------------------------------------------------------------------ */\n\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  return [{\n    json: {\n      tiktok_description: {\n        titel: errorWrap(\"JSON parse failed\", jsonString),\n        description: errorWrap(e.message, jsonString)\n      },\n      _errors: [\"JSON parse failed: \" + e.message]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   4) structure validation (soft)\n------------------------------------------------------------------ */\n\nsoftAssert(\"tiktok_description\" in obj, \"Missing field: tiktok_description\");\n\nconst td = obj.tiktok_description ?? {};\n\nsoftAssert(typeof td === \"object\", \"tiktok_description must be an object\");\nsoftAssert(typeof td.titel === \"string\", \"titel must be string\");\nsoftAssert(typeof td.description === \"string\", \"description must be string\");\n\n/* Normalize empty fields */\ntd.titel = typeof td.titel === \"string\" ? td.titel : \"\";\ntd.description = typeof td.description === \"string\" ? td.description : \"\";\n\n/* ------------------------------------------------------------------\n   5) title checks (TikTok specific)\n------------------------------------------------------------------ */\n\n/* min length */\nif (!softAssert(td.titel.trim().length >= 10, \"titel too short\")) {\n  td.titel = errorWrap(\"titel too short\", td.titel);\n}\n\n/* max 80 chars */\nif (td.titel.length > 80) {\n  const fallbackTitle =\n    $('ProductFields')?.first()?.json?.product_title;\n\n  if (fallbackTitle && typeof fallbackTitle === \"string\") {\n    td.titel = fallbackTitle.trim().slice(0, 80);\n  } else {\n    td.titel = errorWrap(\n      \"titel exceeds 80 characters and no fallback available\",\n      td.titel\n    );\n  }\n}\n\n/* ------------------------------------------------------------------\n   6) description checks (TikTok style)\n------------------------------------------------------------------ */\n\nconst desc = td.description;\n\n/* length */\nsoftAssert(desc.trim().length >= 150, \"description too short\");\nsoftAssert(desc.length <= 2200, \"description too long\");\n\n/* no HTML */\nsoftAssert(!/<[^>]+>/.test(desc), \"description must not contain HTML\");\n\n/* emojis */\nsoftAssert(/\\p{Extended_Pictographic}/u.test(desc), \"missing emojis\");\n\n/* line breaks */\nsoftAssert(/\\n/.test(desc), \"missing line breaks\");\n\n/* bullet / list style */\nconst bulletCount =\n  (desc.match(/^[•\\-–—]/gm)?.length || 0) +\n  (desc.match(/^[^\\w\\s]/gm)?.length || 0);\n\nsoftAssert(\n  bulletCount >= 2,\n  \"description should contain at least 2 bullet-style lines\"\n);\n\n/* ------------------------------------------------------------------\n   7) German language heuristic\n------------------------------------------------------------------ */\n\nconst lowered = (td.titel + \" \" + desc).toLowerCase();\n\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" für \", \" dein \", \" deine \",\n  \"perfekt\", \"stil\", \"ideal\"\n];\n\nconst germanScore = germanMarkers.filter(m =>\n  lowered.includes(m)\n).length;\n\nsoftAssert(germanScore >= 3, \"Text does not appear to be German\");\n\n/* ------------------------------------------------------------------\n   8) finalize errors into fields\n------------------------------------------------------------------ */\n\nif (errors.length > 0) {\n  const msg = errors.join(\" | \");\n  td.titel = errorWrap(msg, td.titel);\n  td.description = errorWrap(msg, td.description);\n}\n\n/* ------------------------------------------------------------------\n   9) success return (loop-safe)\n------------------------------------------------------------------ */\n\nreturn [{\n  json: {\n    tiktok_description: td,\n    _errors: errors,\n    _debug: {\n      error_count: errors.length,\n      german_marker_hits: germanScore,\n      title_length: td.titel.length,\n      description_length: td.description.length,\n      emoji_in_title: /\\p{Extended_Pictographic}/u.test(td.titel),\n      emoji_in_description: /\\p{Extended_Pictographic}/u.test(td.description),\n      bullet_like_lines: bulletCount,\n      line_breaks: (td.description.match(/\\n/g) || []).length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        1328
+      ],
+      "id": "f3e67192-a687-451a-81eb-37b731f27f51",
+      "name": "TikiTok Validator1"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================\n   Fail-soft Shopify Description Validator & Normalizer\n   ================================================================ */\n\n/* ------------------------------------------------------------------\n   Helpers\n------------------------------------------------------------------ */\n\nconst errors = [];\n\nfunction softAssert(cond, msg) {\n  if (!cond) {\n    errors.push(msg);\n    return false;\n  }\n  return true;\n}\n\nfunction errorWrap(msg, original) {\n  return `ERROR!: ${msg}\\n\\nORIGINAL:\\n${original ?? \"\"}`;\n}\n\nfunction extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    return null;\n  }\n\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\n/* ------------------------------------------------------------------\n   1) get raw LLM output\n------------------------------------------------------------------ */\n\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message ??\n  \"\";\n\nif (!rawText || typeof rawText !== \"string\") {\n  return [{\n    json: {\n      shopify_description: {\n        title: errorWrap(\"Missing LLM output text\", \"\"),\n        description_html: errorWrap(\"Missing LLM output text\", \"\"),\n        meta_description: errorWrap(\"Missing LLM output text\", \"\")\n      },\n      _errors: [\"Missing LLM output text\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   2) extract JSON\n------------------------------------------------------------------ */\n\nconst jsonString = extractJson(rawText);\n\nif (!jsonString) {\n  return [{\n    json: {\n      shopify_description: {\n        title: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        description_html: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        meta_description: errorWrap(\"Could not extract JSON from LLM output\", rawText)\n      },\n      _errors: [\"Could not extract JSON from LLM output\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   3) parse JSON\n------------------------------------------------------------------ */\n\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  return [{\n    json: {\n      shopify_description: {\n        title: errorWrap(\"JSON parse failed\", jsonString),\n        description_html: errorWrap(e.message, jsonString),\n        meta_description: errorWrap(e.message, jsonString)\n      },\n      _errors: [\"JSON parse failed: \" + e.message]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   4) structure validation\n------------------------------------------------------------------ */\n\nsoftAssert(\"shopify_description\" in obj, \"Missing shopify_description object\");\n\nconst sd = obj.shopify_description ?? {};\n\nsoftAssert(typeof sd === \"object\", \"shopify_description must be an object\");\nsoftAssert(typeof sd.title === \"string\", \"title must be string\");\nsoftAssert(typeof sd.description_html === \"string\", \"description_html must be string\");\nsoftAssert(typeof sd.meta_description === \"string\", \"meta_description must be string\");\n\nsd.title = typeof sd.title === \"string\" ? sd.title : \"\";\nsd.description_html = typeof sd.description_html === \"string\" ? sd.description_html : \"\";\nsd.meta_description = typeof sd.meta_description === \"string\" ? sd.meta_description : \"\";\n\n/* ------------------------------------------------------------------\n   5) content sanity checks\n------------------------------------------------------------------ */\n\n/* Title */\nsoftAssert(sd.title.trim().length >= 10, \"title too short\");\nsoftAssert(sd.title.length <= 150, \"title unusually long for Shopify\");\n\n/* HTML Description */\nsoftAssert(sd.description_html.trim().length >= 200, \"description_html too short\");\nsoftAssert(sd.description_html.length <= 10000, \"description_html exceeds safe Shopify size\");\n\nsoftAssert(\n  /<p[\\s>]/i.test(sd.description_html),\n  \"description_html must contain <p> tags\"\n);\n\nsoftAssert(\n  !/<script[\\s>]/i.test(sd.description_html),\n  \"description_html must not contain <script>\"\n);\n\nsoftAssert(\n  !/<iframe[\\s>]/i.test(sd.description_html),\n  \"description_html must not contain <iframe>\"\n);\n\nsoftAssert(\n  /<ul[\\s>]|<ol[\\s>]/i.test(sd.description_html),\n  \"description_html should contain a list (<ul> or <ol>)\"\n);\n\n/* ------------------------------------------------------------------\n   6) German language heuristic\n------------------------------------------------------------------ */\n\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" für \", \" ohne \", \" nicht \",\n  \"hochwertig\", \"seide\", \"damen\", \"eleganz\",\n  \"pflege\", \"handwäsche\", \"accessoire\"\n];\n\nconst plainText = sd.description_html\n  .replace(/<[^>]+>/g, \" \")\n  .toLowerCase();\n\nconst fullText = (sd.title + \" \" + plainText).toLowerCase();\n\nconst germanScore = germanMarkers.filter(m =>\n  fullText.includes(m)\n).length;\n\nsoftAssert(germanScore >= 3, \"Text does not appear to be German\");\n\n/* ------------------------------------------------------------------\n   7) override title with manual Shopify product title (soft)\n------------------------------------------------------------------ */\n\nconst manualTitle = $('ProductFields')?.first()?.json?.product_title;\n\nif (manualTitle && typeof manualTitle === \"string\") {\n  sd.title = manualTitle.trim();\n} else {\n  errors.push(\"Manual Shopify product title missing\");\n}\n\n/* ------------------------------------------------------------------\n   8) finalize errors into fields\n------------------------------------------------------------------ */\n\nif (errors.length > 0) {\n  const msg = errors.join(\" | \");\n  sd.title = errorWrap(msg, sd.title);\n  sd.description_html = errorWrap(msg, sd.description_html);\n  sd.meta_description = errorWrap(msg, sd.meta_description);\n}\n\n/* ------------------------------------------------------------------\n   9) return\n------------------------------------------------------------------ */\n\nreturn [{\n  json: {\n    shopify_description: sd,\n    _errors: errors,\n    _debug: {\n      error_count: errors.length,\n      german_marker_hits: germanScore,\n      title_length: sd.title.length,\n      description_html_length: sd.description_html.length,\n      contains_list: /<ul[\\s>]|<ol[\\s>]/i.test(sd.description_html)\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        944
+      ],
+      "id": "6cb32421-c6aa-4222-94d9-012c48a18f64",
+      "name": "Shopify validation1"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================\n   Fail-soft OTTO Description Validator & Normalizer\n   ================================================================ */\n\n/* ------------------------------------------------------------------\n   Helpers\n------------------------------------------------------------------ */\n\nconst errors = [];\n\nfunction softAssert(cond, msg) {\n  if (!cond) {\n    errors.push(msg);\n    return false;\n  }\n  return true;\n}\n\nfunction errorWrap(msg, original) {\n  return `ERROR!: ${msg}\\n\\nORIGINAL:\\n${original ?? \"\"}`;\n}\n\nfunction extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    return null;\n  }\n\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\n/* ------------------------------------------------------------------\n   1) get raw LLM output\n------------------------------------------------------------------ */\n\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message ??\n  \"\";\n\nif (!rawText || typeof rawText !== \"string\") {\n  return [{\n    json: {\n      otto_description: {\n        title: errorWrap(\"Missing LLM output text\", \"\"),\n        description: errorWrap(\"Missing LLM output text\", \"\"),\n        bullets: [errorWrap(\"Missing LLM output text\", \"\")]\n      },\n      _errors: [\"Missing LLM output text\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   2) extract JSON\n------------------------------------------------------------------ */\n\nconst jsonString = extractJson(rawText);\n\nif (!jsonString) {\n  return [{\n    json: {\n      otto_description: {\n        title: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        description: errorWrap(\"Could not extract JSON from LLM output\", rawText),\n        bullets: [errorWrap(\"Could not extract JSON from LLM output\", rawText)]\n      },\n      _errors: [\"Could not extract JSON from LLM output\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   3) parse JSON\n------------------------------------------------------------------ */\n\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  return [{\n    json: {\n      otto_description: {\n        title: errorWrap(\"JSON parse failed\", jsonString),\n        description: errorWrap(e.message, jsonString),\n        bullets: [errorWrap(e.message, jsonString)]\n      },\n      _errors: [\"JSON parse failed: \" + e.message]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   4) structure validation\n------------------------------------------------------------------ */\n\nsoftAssert(\"otto_description\" in obj, \"Missing otto_description object\");\n\nconst od = obj.otto_description ?? {};\n\nsoftAssert(typeof od === \"object\", \"otto_description must be an object\");\nsoftAssert(typeof od.description === \"string\", \"description must be string\");\nsoftAssert(Array.isArray(od.bullets), \"bullets must be array\");\n\nod.description = typeof od.description === \"string\" ? od.description : \"\";\nod.bullets = Array.isArray(od.bullets) ? od.bullets : [];\n\n/* ------------------------------------------------------------------\n   5) content sanity checks\n------------------------------------------------------------------ */\n\n/* Description */\nsoftAssert(od.description.trim().length >= 120, \"description too short\");\nsoftAssert(od.description.length <= 1000, \"description too long for OTTO\");\nsoftAssert(!/<[^>]+>/.test(od.description), \"description must not contain HTML\");\n\n/* Bullets */\nsoftAssert(\n  od.bullets.length >= 4 && od.bullets.length <= 6,\n  \"bullets must contain 4–6 items\"\n);\n\nod.bullets = od.bullets.map((b, i) => {\n  if (typeof b !== \"string\") {\n    errors.push(`bullets[${i}] must be string`);\n    return errorWrap(`bullets[${i}] must be string`, String(b));\n  }\n  if (b.trim().length < 10) {\n    errors.push(`bullets[${i}] too short`);\n  }\n  if (b.length > 120) {\n    errors.push(`bullets[${i}] too long`);\n  }\n  return b;\n});\n\n/* ------------------------------------------------------------------\n   6) German language heuristic\n------------------------------------------------------------------ */\n\nconst fullText =\n  (od.description + \" \" + od.bullets.join(\" \")).toLowerCase();\n\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" besteht \", \" beträgt \",\n  \"farbe\", \"material\", \"pflege\", \"abmessungen\"\n];\n\nconst germanScore = germanMarkers.filter(m =>\n  fullText.includes(m)\n).length;\n\nsoftAssert(germanScore >= 3, \"Text does not appear to be German\");\n\n/* ------------------------------------------------------------------\n   7) normalize OTTO title (soft)\n------------------------------------------------------------------ */\n\nlet manualTitle =\n  $('ProductFields')?.first()?.json?.product_title;\n\nif (manualTitle && typeof manualTitle === \"string\") {\n  manualTitle = manualTitle.trim();\n  manualTitle = manualTitle.replace(\n    /^(maytree\\s+)?\\S+\\s+/i,\n    \"\"\n  ).trim();\n\n  if (manualTitle.length > 3) {\n    od.title = manualTitle;\n  } else {\n    errors.push(\"OTTO title became too short after category removal\");\n    od.title = errorWrap(\n      \"OTTO title became too short after category removal\",\n      manualTitle\n    );\n  }\n} else {\n  errors.push(\"Manual OTTO product title missing\");\n  od.title = errorWrap(\"Manual OTTO product title missing\", \"\");\n}\n\n/* ------------------------------------------------------------------\n   8) finalize errors into fields\n------------------------------------------------------------------ */\n\nif (errors.length > 0) {\n  const msg = errors.join(\" | \");\n  od.description = errorWrap(msg, od.description);\n  od.bullets = od.bullets.map(b => errorWrap(msg, b));\n}\n\n/* ------------------------------------------------------------------\n   9) return\n------------------------------------------------------------------ */\n\nreturn [{\n  json: {\n    otto_description: od,\n    _errors: errors,\n    _debug: {\n      error_count: errors.length,\n      german_marker_hits: germanScore,\n      description_length: od.description.length,\n      bullets_count: od.bullets.length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        1520
+      ],
+      "id": "28e4fc1c-7e06-47e8-82f3-71ffdbe2db19",
+      "name": "Otto validator1"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================\n   Fail-soft About You Description Validator & Normalizer\n   ================================================================ */\n\n/* ------------------------------------------------------------------\n   Helpers\n------------------------------------------------------------------ */\n\nconst errors = [];\n\nfunction softAssert(cond, msg) {\n  if (!cond) {\n    errors.push(msg);\n    return false;\n  }\n  return true;\n}\n\nfunction errorWrap(msg, original) {\n  return `ERROR!: ${msg}\\n\\nORIGINAL:\\n${original ?? \"\"}`;\n}\n\nfunction extractJson(text) {\n  if (!text || typeof text !== \"string\") {\n    return null;\n  }\n\n  const fenced = text.match(/```(?:json)?\\s*([\\s\\S]*?)\\s*```/i);\n  if (fenced && fenced[1]) {\n    return fenced[1].trim();\n  }\n\n  const firstBrace = text.indexOf(\"{\");\n  const lastBrace = text.lastIndexOf(\"}\");\n  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {\n    return text.slice(firstBrace, lastBrace + 1).trim();\n  }\n\n  return null;\n}\n\n/* ------------------------------------------------------------------\n   1) get raw LLM output\n------------------------------------------------------------------ */\n\nconst rawText =\n  $json?.content?.parts?.[0]?.text ??\n  $json?.text ??\n  $json?.message ??\n  \"\";\n\nif (!rawText || typeof rawText !== \"string\") {\n  return [{\n    json: {\n      aboutyou_description: {\n        description: errorWrap(\"Missing LLM output text\", \"\")\n      },\n      _errors: [\"Missing LLM output text\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   2) extract JSON\n------------------------------------------------------------------ */\n\nconst jsonString = extractJson(rawText);\n\nif (!jsonString) {\n  return [{\n    json: {\n      aboutyou_description: {\n        description: errorWrap(\"Could not extract JSON from LLM output\", rawText)\n      },\n      _errors: [\"Could not extract JSON from LLM output\"]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   3) parse JSON\n------------------------------------------------------------------ */\n\nlet obj;\ntry {\n  obj = JSON.parse(jsonString);\n} catch (e) {\n  return [{\n    json: {\n      aboutyou_description: {\n        description: errorWrap(\"JSON parse failed\", jsonString)\n      },\n      _errors: [\"JSON parse failed: \" + e.message]\n    }\n  }];\n}\n\n/* ------------------------------------------------------------------\n   4) structure validation\n------------------------------------------------------------------ */\n\nsoftAssert(\n  \"aboutyou-description\" in obj,\n  \"Missing field: aboutyou-description\"\n);\n\nconst ay = obj[\"aboutyou-description\"] ?? {};\n\nsoftAssert(typeof ay === \"object\", \"aboutyou-description must be an object\");\nsoftAssert(typeof ay.description === \"string\", \"description must be string\");\n\nay.description = typeof ay.description === \"string\" ? ay.description : \"\";\n\n/* ------------------------------------------------------------------\n   5) content sanity checks\n------------------------------------------------------------------ */\n\nsoftAssert(\n  ay.description.trim().length >= 120,\n  \"description too short for About You\"\n);\n\nsoftAssert(\n  ay.description.length <= 1500,\n  \"description too long for About You\"\n);\n\nsoftAssert(\n  !/<[^>]+>/.test(ay.description),\n  \"description must not contain HTML\"\n);\n\nsoftAssert(\n  !/\\p{Extended_Pictographic}/u.test(ay.description),\n  \"description must not contain emojis\"\n);\n\n/* ------------------------------------------------------------------\n   6) German language heuristic\n------------------------------------------------------------------ */\n\nconst germanMarkers = [\n  \" und \", \" mit \", \" aus \", \" besteht \", \" beträgt \",\n  \"material\", \"pflege\", \"eignet sich\", \"handwäsche\",\n  \"farbe\", \"gewicht\"\n];\n\nconst lowered = ay.description.toLowerCase();\n\nconst germanScore = germanMarkers.filter(m =>\n  lowered.includes(m)\n).length;\n\nsoftAssert(germanScore >= 3, \"Text does not appear to be German\");\n\n/* ------------------------------------------------------------------\n   7) finalize errors into field\n------------------------------------------------------------------ */\n\nif (errors.length > 0) {\n  const msg = errors.join(\" | \");\n  ay.description = errorWrap(msg, ay.description);\n}\n\n/* ------------------------------------------------------------------\n   8) return\n------------------------------------------------------------------ */\n\nreturn [{\n  json: {\n    aboutyou_description: ay,\n    _errors: errors,\n    _debug: {\n      error_count: errors.length,\n      german_marker_hits: germanScore,\n      description_length: ay.description.length\n    }\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1296,
+        1712
+      ],
+      "id": "041b996b-d5a0-4ed0-8b22-bcd8d21c62fb",
+      "name": "AboutYou validator1"
+    },
+    {
+      "parameters": {
+        "content": "## edit for final\nneeded to change some data names for this test, change back at the end -> see original workflow.",
+        "height": 1344
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1024,
+        720
+      ],
+      "typeVersion": 1,
+      "id": "beef11dc-abe2-4dd6-b30e-8ea4595b821c",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are generating Shopify product content.\nINPUT:\nMaster content (JSON):\n{{JSON.stringify( $('ValidateMasterContent').item.json.master_content) }}\nLanguage:\n{{ $json.language }}\nRULES:\n- create the description in the language given under language\n- Emotional but elegant tone.\n- No exaggerated claims.\n- No SEO keyword stuffing except for the meta_description.\n- Use simple HTML (p, ul, li, strong).\n- for meta_description create a brief version for SEO purposes. \nOUTPUT:\nReturn JSON only matching this structure:\n{\n  shopify_description:\n  {\n  \"title\": string,\n  \"description_html\": string,\n  \"meta_description\": string\n  }\n}\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        944
+      ],
+      "id": "0412e963-531f-4833-85a8-b93bf2bc51d1",
+      "name": "ShopifyDescription",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are generating Amazon product listing content.\n\nINPUT:\n{{ JSON.stringify($('ValidateMasterContent').item.json.master_content) }}\n\nLanguage:\n{{ $json.language }}\n\nRULES:\n- All output text must be in German.\n- Use neutral, factual language.\n- No marketing phrases or emotional wording.\n- No claims that cannot be proven.\n- No HTML anywhere.\n\nTITLE RULES:\n- Title must be factual and keyword-oriented.\n- Length: 20–200 characters.\n\nDESCRIPTION RULES:\n- Plain text only.\n- One coherent paragraph.\n- Minimum length: 120 characters.\n- Maximum length: 2000 characters.\n\nBULLET RULES:\n- Provide 5 bullet points.\n- Each bullet must be at least 30 characters long.\n- Each bullet must describe a concrete product fact or usage aspect.\n- Avoid repetition between bullets.\n\nBACKEND KEYWORDS:\n- Provide space-separated backend keywords.\n- No duplicates.\n- Total length must be at least 50 characters.\n- Maximum length: 1000 characters.\n- Use relevant product, material, size, and usage terms.\n- Do not include commas or special characters.\n\nCONTENT STABILITY:\n- If applicable, include a factual care or usage instruction (e.g. Pflege, Handwäsche).\n- All content must be consistent with the input data.\n\nOUTPUT:\nReturn JSON only in the following structure:\n{\n  \"amazon_description\": {\n    \"title\": string,\n    \"description\": string,\n    \"bullets\": [string],\n    \"backend_keywords\": string\n  }\n}\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        1136
+      ],
+      "id": "ab99396c-d77f-4859-883f-3b1b0519ace4",
+      "name": "AmazonDescription",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are generating catalog product content for the OTTO platform.\n\nINPUT:\nMaster content (JSON):\n{{ JSON.stringify($('ValidateMasterContent').item.json.master_content) }}\n\nLanguage:\n{{ $json.language }}\n\nRULES:\n- All output text must be in German.\n- Use neutral, factual, descriptive language suitable for a product catalog.\n- No emotional or promotional wording.\n- No marketing phrases or calls to action.\n- No HTML.\n- Description must be one coherent paragraph with at least 350 characters.\n- The description must clearly describe:\n  - product type\n  - material composition\n  - size\n  - design or pattern\n  - typical use (factual, non-promotional)\n- Bullets must describe factual product attributes.\n- Provide exactly 5 bullet points.\n\nCONTENT REQUIREMENTS (MANDATORY):\n- Size must be stated in the format “<number> x <number> cm”.\n- At least one bullet must contain a clear care instruction using:\n  “Handwäsche”, “Pflege”, “waschen”, or “nicht maschinenwaschbar”.\n- Care instructions must be material-appropriate and factual.\n\n\nOUTPUT:\nReturn JSON only in the following structure:\n{\n  \"otto_description\": {\n    \"description\": string,\n    \"bullets\": [string]\n  }\n}\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        1520
+      ],
+      "id": "1551c925-2596-4c37-b7a8-b47670d70fab",
+      "name": "OttoDescription",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are generating neutral catalog product content.\nOptimize this text for TikTok Shop.\nCreate a short, impactful TikTok title (max. 80 characters, with 2–3 emojis). Make sure to include **size details** and **color**.\nWrite an emotional, clear description with a title and emojis, 2 paragraphs, and 3–4 bullet points using round bullets. Make sure to include the size information!! Do not use the words title or description, only the actual text.\nUse a friendly, lively tone.\nINPUT:\nMaster content (JSON):\n{{JSON.stringify( $('ValidateMasterContent').item.json.master_content) }}\nlanguage:\n{{ $json.language }}\nRULES:\n- create the description in the language given under language\n- the title may not exceed 80 characters\n- Neutral, factual language.\n- No emotional wording.\n- No marketing phrases.\n- One coherent paragraph.\nOUTPUT:\nReturn JSON only:\n{\n  tiktok_description:\n  {\n    \"titel\": string,\n    \"description\": string\n  }\n}\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        1328
+      ],
+      "id": "6c528cd9-fdc4-4e34-815a-c51980edecb0",
+      "name": "TikTokDescription",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are generating catalog product content for about you.\nINPUT:\nMaster content (JSON):\n{{JSON.stringify( $('ValidateMasterContent').item.json.master_content) }}\nlanguage:\n{{ $json.language }}\nRULES:\n- create the description in the language given under language\n- Neutral, factual language.\n- No emotional wording.\n- No marketing phrases.\n- One coherent paragraph.\nOUTPUT:\nReturn JSON only:\n{\n  aboutyou-description:\n  {\n    \"description\": string\n  }\n}\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        944,
+        1712
+      ],
+      "id": "515b32d6-c509-442d-a305-a72a58dd1ead",
+      "name": "AboutYouDescription",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "numberInputs": 5,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1616,
+        1280
+      ],
+      "id": "f5ff371c-2910-4839-9adf-a0de6e514977",
+      "name": "Merge4"
+    },
+    {
+      "parameters": {
+        "options": {
+          "delimiter": ";",
+          "fileName": "Jtl_stammdaten_import.csv",
+          "headerRow": true
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2064,
+        1344
+      ],
+      "id": "0a137ff6-c4e2-4f15-acb1-b49ba04921ac",
+      "name": "Convert to File3"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "=C:\\n8n\\data\\n8n_stammdaten-{{ $('ArtikelStammdaten').item.json.sku }}.csv",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        2288,
+        1344
+      ],
+      "id": "af05821b-a7c9-4b5b-bd40-083c23232a48",
+      "name": "Read/Write Files from Disk3"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "=C:\\n8n\\data\\n8n_attribute-{{ $('ArtikelStammdaten').item.json.sku }}.csv",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [
+        2960,
+        1344
+      ],
+      "id": "2376c011-162a-4e2a-8674-51f9a3132e0d",
+      "name": "Read/Write Files from Disk4"
+    },
+    {
+      "parameters": {
+        "options": {
+          "delimiter": ";",
+          "fileName": "Jtl_attribut_import.csv",
+          "headerRow": true
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2736,
+        1344
+      ],
+      "id": "9767113d-e180-4a01-bd94-9843da2b2acc",
+      "name": "Convert to File4"
+    },
+    {
+      "parameters": {
+        "chatId": "7733334048",
+        "text": "=Product workflow successfully ended. {{ Date.now() }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3168,
+        1344
+      ],
+      "id": "aaec3690-76e7-4104-aea9-cecd1604dbd4",
+      "name": "Send a text message",
+      "webhookId": "7e23cff1-434f-493b-bfa4-3044e1b85d4e",
+      "credentials": {
+        "telegramApi": {
+          "id": "ZQ2bxmSNrZ2ki9ZW",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f6663c4e-8bb6-4ae3-beb1-cc9619406666",
+              "name": "product_title",
+              "value": "={{ $json.body.product_title }}",
+              "type": "string"
+            },
+            {
+              "id": "309155d2-bac6-4e4a-aeb2-083476afd613",
+              "name": "product_length",
+              "value": "={{ $json.body.product_length }}",
+              "type": "number"
+            },
+            {
+              "id": "39b7e603-cdfd-4d0c-8798-b8fa1a055ab9",
+              "name": "product_width",
+              "value": "={{ $json.body.product_width }}",
+              "type": "number"
+            },
+            {
+              "id": "38937c08-5e69-40f2-a2f0-fff154f0d730",
+              "name": "product_height",
+              "value": "={{ $json.body.product_height }}",
+              "type": "number"
+            },
+            {
+              "id": "78349148-60bc-4d56-a08b-680d87dfc4a3",
+              "name": "product_weight",
+              "value": "={{ $json.body.product_weight }}",
+              "type": "number"
+            },
+            {
+              "id": "4bbd6d19-74c9-419d-ac20-dd1f543599af",
+              "name": "product_size",
+              "value": "={{$json.body.product_length + \"x\" + $json.body.product_width}}",
+              "type": "string"
+            },
+            {
+              "id": "36ed32a6-1de3-4400-a4d5-456bcaa81e08",
+              "name": "product_typ",
+              "value": "={{ $json.body.product_category }}",
+              "type": "string"
+            },
+            {
+              "id": "c2d4a800-fad8-47d3-8cd7-99741c604f9b",
+              "name": "brand",
+              "value": "MayTree",
+              "type": "string"
+            },
+            {
+              "id": "805de5e1-292b-49a0-8365-084d739fd6bb",
+              "name": "Material",
+              "value": "={{ $json.body.product_material }}",
+              "type": "string"
+            },
+            {
+              "id": "09277aef-b037-4cce-8f92-83b1c529d4ab",
+              "name": "product_price",
+              "value": "={{ $json.body.product_price }}",
+              "type": "number"
+            },
+            {
+              "id": "0bfb0eb9-aa09-4243-9e0e-69210e7a68e7",
+              "name": "product_uvp",
+              "value": "={{ $json.body.product_price }}",
+              "type": "number"
+            },
+            {
+              "id": "fc40557e-c82f-49ef-b197-2996aba2ef24",
+              "name": "product_amount",
+              "value": "={{ $json.body.product_amount }}",
+              "type": "number"
+            },
+            {
+              "id": "85c042c5-7fe0-4ca0-abd1-aa95445f1e5b",
+              "name": "product_amazon_price",
+              "value": "={{ $json.body.product_price }}",
+              "type": "number"
+            },
+            {
+              "id": "dc987c9d-437b-437b-9685-c0d43b1bea33",
+              "name": "product_shipping_weight",
+              "value": "={{ $json.body.product_weight }}",
+              "type": "number"
+            },
+            {
+              "id": "5d6d3027-06a3-4bb4-8394-e63b3f47edbb",
+              "name": "versandklasse",
+              "value": "standard",
+              "type": "string"
+            },
+            {
+              "id": "ca096861-7363-4f4e-84d7-b684a9e77c27",
+              "name": "shopify_url",
+              "value": "={{ \n  ($json.body.product_title || '')\n    .trim()\n    .toLowerCase()\n    .replace(/[^a-z0-9]+/g, '-')\n    .replace(/^-+|-+$/g, '')\n}}",
+              "type": "string"
+            },
+            {
+              "id": "2d330c32-ac94-4a1a-a2ab-ad0c8fd57603",
+              "name": "perlengroesse",
+              "value": "={{ $json.perlengroesse ?? 'none' }}",
+              "type": "string"
+            },
+            {
+              "id": "d9e41ff7-91db-4bb4-aec7-be1c10c164ce",
+              "name": "farbsteinart",
+              "value": "={{ $json.farbsteinart ?? 'none' }}",
+              "type": "string"
+            },
+            {
+              "id": "55b9ea79-f101-4409-b580-5988af291634",
+              "name": "durchmesser_anhaenger",
+              "value": "={{ $json.durchmesser_anhaenger ?? 'none' }}",
+              "type": "string"
+            },
+            {
+              "id": "1879e996-c3e4-411e-9b28-501222bec8a1",
+              "name": "gesamtlaenge_kette",
+              "value": "={{ $json.gesamtlaenge_kette ?? 'none' }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -16,
+        112
+      ],
+      "id": "48dccac2-447d-4539-9d3c-b7400b4d0c2d",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH picked AS (\n  SELECT ean\n  FROM ean_pool\n  WHERE used_at IS NULL\n  ORDER BY ean\n  LIMIT 1\n  FOR UPDATE SKIP LOCKED\n)\nUPDATE ean_pool\nSET used_at = NOW(),\n    used_for = '{{$json.sku}}'\nWHERE ean = (SELECT ean FROM picked)\nRETURNING ean;\n\n\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        208,
+        -240
+      ],
+      "id": "6085bcca-cb59-4e88-8319-abd875af653a",
+      "name": "GetEAN1",
+      "credentials": {
+        "postgres": {
+          "id": "aInn6WHwUn5WC5PQ",
+          "name": "Postgres account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH upsert AS (\n  INSERT INTO daily_counters (day, counter)\n  VALUES (CURRENT_DATE, 1)\n  ON CONFLICT (day)\n  DO UPDATE SET counter = daily_counters.counter + 1\n  RETURNING day, counter\n)\nSELECT\n  to_char(day, 'YYMMDD') ||\n  '-' ||\n  lpad(counter::text, 3, '0') ||\n  '-AN' AS sku\nFROM upsert;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -16,
+        -144
+      ],
+      "id": "71127bde-a700-403d-989d-e3e728aed728",
+      "name": "GetSKU1",
+      "credentials": {
+        "postgres": {
+          "id": "aInn6WHwUn5WC5PQ",
+          "name": "Postgres account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "numberInputs": 3,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        208,
+        160
+      ],
+      "id": "0301ff89-ced5-474c-94cb-f82b8df7fb41",
+      "name": "Base64+InputFields1"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "={{ $json.tableId }}",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        880,
+        -240
+      ],
+      "id": "b4c1d0e4-43a9-4d57-af23-7ce429fbb185",
+      "name": "Get row(s)1"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "d6f839a3-0334-45ba-bad8-d15f363c7803",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -304,
+        144
+      ],
+      "id": "ce15779b-8b68-4791-a192-1fa081b3daf0",
+      "name": "Webhook1",
+      "webhookId": "d6f839a3-0334-45ba-bad8-d15f363c7803"
+    },
+    {
+      "parameters": {
+        "jsCode": "// --------------------------------------------------\n// PRODUKTDATEN\n// --------------------------------------------------\nconst product = $input.first().json;\n\nconst sku      = product.sku;\nconst category = product.product_typ || '';\nconst length   = Number(product.product_length);\nconst width    = Number(product.product_width);\nconst material = product.product_material || '';\n\nconst tableIdMap = {\n  KategorienSeideBandeau: 'KBmSH4MyHhUnFedk',\n  KategorienSeide86: '93SqqekehTOqymO0',\n  KategorienSeide70: 'yzq4LX5enl18YgI6',\n  KategorienSeide65: 'cZlkufwRyWeGLnoZ',\n  KategorienSeide55: 'BcCsAkNXBfs1TiLs',\n  KategorienSeide16: '5WcGuwQQ6whEot6C',\n  KategorienSeide53: '6C3NT3bHxJS2nLgD',\n  KategorienSeide53Herren: 'FtGPCChW7mSATUf8',\n  KategorienSeideBaumwolle: 'ZmRfQlyrna3lWe68',\n  KategorienBrosche: 'Pc7YziQ9a1ZoUfhQ',\n  KategorienArmband: 'WMx4TZvbbhprSpLD',\n  KategorienKette: 'iVskBtZOD2OBo4zE',\n  KategorienOhrring: 't0XGBMmO94l06wUb'\n};\n\n// --------------------------------------------------\n// 1️⃣ TABELLENNAME PER LOGIK ERMITTELN\n// (GENAU dein Code, unverändert)\n// --------------------------------------------------\nlet tableName = null;\n\n// Baumwolle\nif (/[Bb]aumwolle/.test(material)) {\n  tableName = 'KategorienSeideBaumwolle';\n}\n\n// Herren\nelse if (category === 'seidentuch-herren') {\n  if (width === 53 || length === 53) {\n    tableName = 'KategorienSeide53Herren';\n  } else {\n    tableName = 'KategorienSeide53'; // Fallback\n  }\n}\n\n// Damen\nelse if (category === 'seidentuch-damen') {\n  const size = !isNaN(width) ? width : length;\n\n  if (size === 5)                  tableName = 'KategorienSeideBandeau';\n  else if (size === 86)            tableName = 'KategorienSeide86';\n  else if (size === 70)            tableName = 'KategorienSeide70';\n  else if (size === 55)            tableName = 'KategorienSeide55';\n  else if (size === 16)            tableName = 'KategorienSeide16';\n  else if (size === 53)            tableName = 'KategorienSeide53';\n  else if (size === 65 || size === 64)\n                                   tableName = 'KategorienSeide65';\n}\nelse if (category === 'armband') {\n  tableName = 'KategorienArmband';\n}\nelse if (category === 'brosche') {\n  tableName = 'KategorienBrosche';\n}\nelse if (category === 'kette') {\n  tableName = 'KategorienKette';\n}\nelse if (category === 'ohrring') {\n  tableName = 'KategorienOhrring';\n}\n\n// Wenn nichts passt → kein Output\nif (!tableName) {\n  tableName = 'KategorienSeide53';\n}\n\nconst tableId = tableIdMap[tableName];\n\nreturn [{ json: { tableId } }];\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        656,
+        -240
+      ],
+      "id": "f76c132e-db94-4e87-bd14-a018aaf928c8",
+      "name": "KategorieTableID"
+    },
+    {
+      "parameters": {
+        "jsCode": "const sku = $('ProductFields').first().json.sku;\nconst rows = $input.all();\n\nfunction isEmpty(v) {\n  return v === null || v === undefined || v === '';\n}\n\nreturn rows.map(({ json }) => {\n  const record = { Artikelnummer: sku };\n\n  for (let i = 1; i <= 6; i++) {\n    const key = `Kategorie_Ebene_${i}`;\n    if (!isEmpty(json[key])) {\n      record[key] = json[key];\n    }\n  }\n\n  return { json: record };\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1056,
+        -240
+      ],
+      "id": "385585c2-b14c-4ac5-a715-21766fa82df6",
+      "name": "Kategorien"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Hilfsfunktion: Bullet sicher hinzufügen\nfunction pushBullet({ sku, rows, group, namePrefix, bullets }) {\n  if (!Array.isArray(bullets)) return;\n\n  bullets.forEach((text, idx) => {\n    if (typeof text !== 'string') return;\n    if (!text.trim()) return;\n\n    rows.push({\n      Artikelnummer: sku,\n      Attributgruppe: group,\n      Attributname: `${namePrefix}${idx + 1}`,\n      Attributwert: text\n    });\n  });\n}\n\n// SKU holen\nconst sku = $('ProductFields').first().json.sku;\n\n// Attribute holen\nconst attributes = $('MergeAllAttributes').first().json.attributes_all || [];\n\n// Ergebnis-Array (eine Zeile = ein Objekt)\nconst rows = [];\n\n// Alle Attribute durchgehen\nfor (const attr of attributes) {\n\n  // JTL-Attribute ausschließen\n  if (!attr.attribute_group || attr.attribute_group === 'JTL') {\n    continue;\n  }\n\n  rows.push({\n    Artikelnummer: sku,\n    Attributgruppe: attr.attribute_group,\n    Attributname: attr.attribute_name,\n    Attributwert: attr.attribute_value\n  });\n}\n\n/* -------------------------------------------------- */\n/* 👉 MANUELL Attribute hinzufügen       */\n/* -------------------------------------------------- */\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Attribute',\n  Attributname: 'barcode',\n  Attributwert: $('ProductFields').first().json.ean\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Artikel',\n  Attributname: 'Breite',\n  Attributwert: $('ProductFields').first().json.product_width\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'AmazonLister',\n  Attributname: 'color_name',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Farbe\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Attribute',\n  Attributname: 'Color',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Farbe\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Metafields',\n  Attributname: 'meta_color:mm-google-shopping',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Farbe\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Metafields',\n  Attributname: 'meta_color:custom',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Farbe\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'TikTok',\n  Attributname: 'DesignSchal',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'unicorn2-OttoMarket',\n  Attributname: 'Optik',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'unicorn2-OttoMarket',\n  Attributname: 'Stil',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'AmazonLister',\n  Attributname: 'Muster',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'AmazonLister',\n  Attributname: 'model',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Metafields',\n  Attributname: 'meta_pattern:custom',\n  Attributwert: $('MergeAllAttributes').first().json.attributes_kv.Optik_ai\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'unicorn2-OttoMarket',\n  Attributname: 'Gewicht',\n  Attributwert: $('ProductFields').first().json.product_weight\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Artikel',\n  Attributname: 'Länge',\n  Attributwert: $('ProductFields').first().json.product_length\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Artikel',\n  Attributname: 'Länge',\n  Attributwert: $('ProductFields').first().json.product_length\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'SXC-OttoMarket',\n  Attributname: 'Reference',\n  Attributwert: sku\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'AmazonLister',\n  Attributname: 'shipping_weight',\n  Attributwert: $('ProductFields').first().json.product_weight\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'AmazonLister',\n  Attributname: 'size',\n  Attributwert: $('ProductFields').first().json.product_width\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Attribute',\n  Attributname: 'sku',\n  Attributwert: sku\n});\n\nrows.push({\n  Artikelnummer: sku,\n  Attributgruppe: 'Shopify-Attribute',\n  Attributname: 'barcode_typ',\n  Attributwert: 'EAN'\n});\n\nif ($('ProductFields').first().json.durchmesser_anhaenger && $('ProductFields').first().json.durchmesser_anhaenger !== 'none') {\n  rows.push({\n    Artikelnummer: sku,\n    Attributgruppe: 'unicorn2-OttoMarket',\n    Attributname: 'Perlengröße',\n    Attributwert: $('ProductFields').first().json.durchmesser_anhaenger\n  });\n}\n\nif ($('ProductFields').first().json.perlengroesse && $('ProductFields').first().json.perlengroesse !== 'none') {\n  rows.push({\n    Artikelnummer: sku,\n    Attributgruppe: 'unicorn2-OttoMarket',\n    Attributname: 'Durchmesser Anhänger',\n    Attributwert: $('ProductFields').first().json.perlengroesse\n  });\n}\n\nif ($('ProductFields').first().json.gesamtlaenge_kette && $('ProductFields').first().json.gesamtlaenge_kette !== 'none') {\n  rows.push({\n    Artikelnummer: sku,\n    Attributgruppe: 'unicorn2-OttoMarket',\n    Attributname: 'Gesamtlänge Kette',\n    Attributwert: $('ProductFields').first().json.gesamtlaenge_kette\n  });\n}\n\nif ($('ProductFields').first().json.farbsteinart && $('ProductFields').first().json.farbsteinart !== 'none') {\n  rows.push({\n    Artikelnummer: sku,\n    Attributgruppe: 'unicorn2-OttoMarket',\n    Attributname: 'Farbsteinart',\n    Attributwert: $('ProductFields').first().json.farbsteinart\n  });\n}\n// --------------------------------------------------\n// OTTO Bulletpoints\n// --------------------------------------------------\npushBullet({\n  sku,\n  rows,\n  group: 'SXC-OttoMarket',\n  namePrefix: 'BulletPoint',\n  bullets: $('Otto validator1')\n    .first()\n    .json\n    .otto_description\n    .bullets\n});\n\n// --------------------------------------------------\n// Amazon Bulletpoints (DE)\n// --------------------------------------------------\npushBullet({\n  sku,\n  rows,\n  group: 'Amazon Bulletpoints',\n  namePrefix: 'de_bullet',\n  bullets: $('Amazon validation1')\n    .first()\n    .json\n    .amazon_description\n    .bullets\n});\n\n\n// n8n erwartet: Array von Items\nreturn rows.map(row => ({ json: row }));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2512,
+        1344
+      ],
+      "id": "09a257e2-489d-45bd-a332-29dc29523e63",
+      "name": "ArtikelAttribute"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "Zoc8wXurX16sww54",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Armband",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/Zoc8wXurX16sww54"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -896
+      ],
+      "id": "d7508a39-bb40-47f9-8383-0ace2f1b8780",
+      "name": "attributes_Armband"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "FChaKmSHOBlwV6Uz",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Brosche",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/FChaKmSHOBlwV6Uz"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -752
+      ],
+      "id": "7fab5afa-a128-400e-899c-8fe5fdae596f",
+      "name": "attributes_Brosche"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "qD5ursnGNmhxms15",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Kette",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/qD5ursnGNmhxms15"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -608
+      ],
+      "id": "8204dd70-8228-4492-b357-024c6e6879e7",
+      "name": "attributes_Kette"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "h9JNbD0swxYMOGq2",
+          "mode": "list",
+          "cachedResultName": "Standard_Attributes_Ohrring",
+          "cachedResultUrl": "/projects/ke0oEnLq9UNjo6bw/datatables/h9JNbD0swxYMOGq2"
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        2480,
+        -368
+      ],
+      "id": "890cd6c8-0edf-4f58-b6e4-65db7ecab26f",
+      "name": "attributes_Ohrring"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are a strict attribute value extraction engine for e-commerce product data.\n\nIMPORTANT LANGUAGE RULE:\nALL generated content MUST be in GERMAN.\nThis applies to:\n- value\n- warnings\n- all descriptive text\nDo NOT use English words unless they are proper nouns or product names.\n\nReturn JSON only.\nNo markdown.\nNo explanations.\nNo extra keys.\n\nYou MUST follow the output structure exactly.\n\nOUTPUT STRUCTURE (must match exactly):\n{\n  \"attribute_group\": string,\n  \"attribute_name\": string,\n  \"attribute_value\": string | number | boolean | null,\n  \"attribute_type\": \"general | jtl\",\n  \"confidence\": number between 0 and 1,\n  \"warnings\": [string]\n}\n\nHARD RULES (critical):\n1) Do NOT guess.\n   If the value cannot be determined reliably, set attribute_value = null\n   and add a German warning.\n\n2) If ALLOWED VALUES are provided:\n   - value MUST be EXACTLY one of the allowed values (character-by-character match).\n   - Otherwise set value = null and add warning \"nicht_in_erlaubten_werten\".\n\n3) If attribute_format = \"number\":\n   - return a NUMBER ONLY\n   - no units, no text\n   - if unsure → null\n\n4) If attribute_format = \"boolean\":\n   - return true or false ONLY\n   - if unsure → null\n\n5) If attribute_format = \"single_line_text\":\n   - return ONE short German line\n   - no line breaks\n\n6) If attribute_format = \"multi_line_text\":\n   - neutral, factual German text\n   - no marketing language\n   - no unverifiable claims\n\n7) NEVER create additional keys.\n   Output ONLY the keys defined in OUTPUT STRUCTURE.\n\nPRODUCT CONTEXT (trusted JSON, do not reinterpret):\n{{ JSON.stringify($node[\"Product Understanding\"].json.product_understanding, null, 2) }}\n\nPRODUCT INPUTS (trusted):\n- Title: {{$node[\"ProductFields\"].json.product_title}}\n- SKU: {{$node[\"ProductFields\"].json.sku}}\n- Brand: {{$node[\"ProductFields\"].json.brand}}\n- Model: {{$node[\"Product Understanding\"].json.product_understanding.visual_facts.motif}}\n- Material: {{$node[\"ProductFields\"].json.Material}}\n- Produkt Typ: {{$node[\"ProductFields\"].json.produkt_typ}}\nATTRIBUTE TO FILL (current CSV row):\n- attribute_group {{$json.JTL_group}}\n- attribute_name: {{$json.Attribute_name}}\n- attribute_type: {{$json.Attribute_type}}\n\nATTRIBUTE DESCRIPTION / INTENT:\n{{$json.Beschreibung_deutsch}}\n\nALLOWED VALUES (may be empty, already in German):\n{{$json.allowed_values}}\n\nAttribute Format (informational only, DO NOT include in output):\n{{$json.Attribute_format}}\n\nTASK:\nGenerate EXACTLY ONE JSON object following the OUTPUT STRUCTURE.\n\nThe following fields in the output MUST EXACTLY MATCH the input:\n- attribute_group\n- attribute_name\n- attribute_type\n\nWICHTIG:\n- Verwende bei Farben bevorzugt die dominanten Farben aus product_understanding.visual_facts.\n- Wenn allowed_values vorhanden sind: mappe auf den nächstpassenden erlaubten Farbnamen und gib GENAU diesen zurück. Wenn allowed_values nicht vorhanden ist erstelle eine Kombination aus product_understanding.visual_facts.dominant_colors\n"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        2608,
+        112
+      ],
+      "id": "87194b56-4cf1-42b2-855f-5b94137207ce",
+      "name": "GetAttributeValues",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "kNglpKgKP5LuvGU3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        432,
+        176
+      ],
+      "id": "02048a31-bef7-4f36-a6aa-edfe6682e5f8",
+      "name": "ProductFields"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================== */\n/* BUILD ONE FLAT CSV-READY OBJECT (WITH DEBUG)                       */\n/* ================================================================== */\n\n/* ------------------------------------------------------------------ */\n/* INPUTS                                                             */\n/* ------------------------------------------------------------------ */\n\nconst rawProductFields =\n  $node[\"ProductFields\"]?.json ?? {};\n\nconst attributesData =\n  $node[\"MergeAllAttributes\"]?.json ?? {};\n\n\n/* take first item if present */\nlet descriptionsRootRaw = $input.first().json ?? {};\nlet descriptionsRoot;\n\n/* Parse if stringified JSON */\nif (typeof descriptionsRootRaw === \"string\") {\n  try {\n    descriptionsRoot = JSON.parse(descriptionsRootRaw);\n  } catch (e) {\n    throw new Error(\"Descriptions JSON could not be parsed\");\n  }\n} else {\n  descriptionsRoot = descriptionsRootRaw;\n}\n\n\n/* ================================================================== */\n/* 1) CLEAN PRODUCT FIELDS                                            */\n/* ================================================================== */\n\nconst EXCLUDE_PRODUCT_KEYS = new Set([\n  \"product_images\",\n  \"product_category\",\n  \"submittedAt\",\n  \"formMode\",\n  \"headers\",\n  \"params\",\n  \"query\",\n  \"body\",\n  \"webhookUrl\",\n  \"executionMode\",\n  \"perlengroesse\",\n  \"farbsteinart\",\n  \"durchmesser_anhaenger\",\n  \"gesamtlaenge_kette\",\n  \"product_typ\"\n]);\n\nconst cleanedProductFields = Object.fromEntries(\n  Object.entries(rawProductFields).filter(\n    ([key]) => !EXCLUDE_PRODUCT_KEYS.has(key)\n  )\n);\n\n/* ================================================================== */\n/* 2) EXTRACT JTL ATTRIBUTES (FLAT)                                   */\n/* ================================================================== */\n\nconst attributesAll = Array.isArray(attributesData.attributes_all)\n  ? attributesData.attributes_all\n  : [];\n\nconst jtlAttributesFlat = Object.fromEntries(\n  attributesAll\n    .filter(a => a.attribute_group === \"JTL\")\n    .map(a => [\n      a.attribute_name,\n      a.attribute_value\n    ])\n);\n\n/* ================================================================== */\n/* 3) FLATTEN DESCRIPTIONS                                            */\n/* ================================================================== */\n\nconst flatDescriptions = {};\n\nfor (const [platformKey, platformObj] of Object.entries(descriptionsRoot)) {\n\n  if (!platformKey.endsWith(\"_description\")) continue;\n  if (typeof platformObj !== \"object\" || platformObj === null) continue;\n\n  const prefix = platformKey\n    .replace(/_description$/, \"\")\n    .toLowerCase();\n\n  for (const [field, value] of Object.entries(platformObj)) {\n\n    if (field === \"title\" || field === \"titel\") {\n      flatDescriptions[`${prefix}_title`] = String(value);\n      continue;\n    }\n\n    if (field === \"description\" || field === \"description_html\") {\n      flatDescriptions[`${prefix}_description`] = String(value);\n      continue;\n    }\n\n    if (Array.isArray(value) && field === \"bullets\") {\n      continue;\n    }\n\n    if (\n      typeof value === \"string\" ||\n      typeof value === \"number\" ||\n      typeof value === \"boolean\"\n    ) {\n      flatDescriptions[`${prefix}_${field}`] = String(value);\n    }\n  }\n}\n\n/* ================================================================== */\n/* 4) MERGE EVERYTHING                                                */\n/* ================================================================== */\n\nconst flatCsvObject = {\n  ...cleanedProductFields,\n  ...jtlAttributesFlat,\n  ...flatDescriptions,\n\n};\n\n/* ================================================================== */\n/* 5) FINAL CSV FORMAT + SORTED KEYS                                  */\n/* ================================================================== */\n\nconst csvReadyObject = {};\n\nconst sortedKeys = Object.keys(flatCsvObject)\n  .sort((a, b) => a.localeCompare(b));\n\nfor (const key of sortedKeys) {\n  const value = flatCsvObject[key];\n\n  if (typeof value === \"number\") {\n    csvReadyObject[key] = Number.isInteger(value)\n      ? String(value)\n      : value.toString().replace(\".\", \",\");\n    continue;\n  }\n\n  if (typeof value === \"object\" && value !== null) {\n    csvReadyObject[key] = JSON.stringify(value);\n    continue;\n  }\n\n  csvReadyObject[key] = value;\n}\n\n/* ================================================================== */\n/* OUTPUT                                                            */\n/* ================================================================== */\n\nreturn [{\n  json: csvReadyObject\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        1344
+      ],
+      "id": "bc19139d-e909-45f0-ae47-385ef4c55e0a",
+      "name": "ArtikelStammdaten"
+    },
+    {
+      "parameters": {
+        "jsCode": "/* ================================================================ */\n/* FILTER ATTRIBUTES BY PRODUCT TYPE (ROBUST)                       */\n/* ================================================================ */\n\n\nconst attributes = $input.all().map(item => item.json);\n\n/* FIX: correct product type field */\nconst productTypeRaw =\n  $node[\"ProductFields\"]?.json?.product_typ ??\n  $node[\"ProductFields\"]?.json?.product_type ??\n  \"\";\n\nconst productType = productTypeRaw\n  .toString()\n  .trim()\n  .toLowerCase();\n\n/* Normalize Kategorie safely */\nfunction normalizeKategorie(kategorie) {\n  if (!kategorie || typeof kategorie !== \"string\") return [];\n\n  return kategorie\n    .replace(/\\s+/g, \" \")   // remove newlines / tabs\n    .split(\",\")\n    .map(v => v.trim().toLowerCase())\n    .filter(Boolean);\n}\n\nconst filteredAttributes = attributes.filter(attr => {\n  const katRaw = attr.Kategorie;\n\n  if (!katRaw || typeof katRaw !== \"string\") return false;\n\n  const categories = normalizeKategorie(katRaw);\n\n  // keep if \"all\"\n  if (categories.includes(\"all\")) return true;\n\n  // keep if product type matches\n  return categories.includes(productType);\n});\n\nreturn filteredAttributes.map(attr => ({\n  json: attr\n}));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2160,
+        176
+      ],
+      "id": "ed87cf13-6b11-4151-8611-ca4c01bac372",
+      "name": "FilterRequiredAttributes"
+    }
+  ],
+  "pinData": {
+    "Webhook1": [
+      {
+        "json": {
+          "headers": {
+            "host": "home.maytree.online",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+            "content-length": "794035",
+            "accept": "*/*",
+            "accept-encoding": "gzip, deflate, br, zstd",
+            "accept-language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryXz1jlJWXD8HiByPg",
+            "origin": "http://192.168.178.221:3000",
+            "priority": "u=1, i",
+            "referer": "http://192.168.178.221:3000/",
+            "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Google Chrome\";v=\"144\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "cross-site",
+            "via": "2.0 Caddy",
+            "x-forwarded-for": "79.206.74.230:60429",
+            "x-forwarded-host": "home.maytree.online",
+            "x-forwarded-proto": "https"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "product_title": "Seidentuch quadratisch Vincent 65x65 Mandelblüte",
+            "product_length": "65",
+            "product_width": "65",
+            "product_height": "1",
+            "product_material": "100% Maulbeerseide",
+            "product_weight": "30",
+            "product_price": "33.85",
+            "product_amount": "7",
+            "product_category": "seidentuch-damen"
+          },
+          "webhookUrl": "https://home.maytree.online/webhook/d6f839a3-0334-45ba-bad8-d15f363c7803",
+          "executionMode": "production"
+        },
+        "binary": {
+          "image": {
+            "mimeType": "image/jpeg",
+            "fileType": "image",
+            "fileExtension": "jpg",
+            "data": "filesystem-v2",
+            "fileName": "(Benutzerdefiniert) GrößereSeidentücher2026-vindentMandel1.jpg",
+            "id": "filesystem-v2:workflows/fSBLc1eLogfowDwr/executions/temp/binary_data/dcb9c32e-e425-4dec-8c0e-b156d12ba1c2",
+            "fileSize": "793 kB"
+          }
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "attributes_Silk_female",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "attributes_Silk_male",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "attributes_Armband",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "attributes_Brosche",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "attributes_Kette",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "attributes_Ohrring",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "attributes_Silk_female": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attributes_Silk_male": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attribute_descriptions": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze an image": {
+      "main": [
+        [
+          {
+            "node": "Product Understanding",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "AggregateAttributes",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "GetAttributeValues",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Product Understanding": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "ValidateAttribut": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AggregateAttributes": {
+      "main": [
+        [
+          {
+            "node": "NormalizeGenerated",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "FilterRequiredAttributes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NormalizeDefault": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NormalizeGenerated": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "MergeAllAttributes": {
+      "main": [
+        [
+          {
+            "node": "MasterContent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "MergeAllAttributes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MasterContent": {
+      "main": [
+        [
+          {
+            "node": "ValidateMasterContent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ValidateMasterContent": {
+      "main": [
+        [
+          {
+            "node": "Insert or update rows in a table1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File2": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk2": {
+      "main": [
+        [
+          {
+            "node": "attribute_descriptions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert or update rows in a table1": {
+      "main": [
+        [
+          {
+            "node": "ShopifyDescription",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "AmazonDescription",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "TikTokDescription",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "OttoDescription",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "AboutYouDescription",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Amazon validation1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "TikiTok Validator1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Shopify validation1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Otto validator1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "AboutYou validator1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "ShopifyDescription": {
+      "main": [
+        [
+          {
+            "node": "Shopify validation1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AmazonDescription": {
+      "main": [
+        [
+          {
+            "node": "Amazon validation1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OttoDescription": {
+      "main": [
+        [
+          {
+            "node": "Otto validator1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "TikTokDescription": {
+      "main": [
+        [
+          {
+            "node": "TikiTok Validator1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AboutYouDescription": {
+      "main": [
+        [
+          {
+            "node": "AboutYou validator1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge4": {
+      "main": [
+        [
+          {
+            "node": "ArtikelStammdaten",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File3": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk3": {
+      "main": [
+        [
+          {
+            "node": "ArtikelAttribute",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File4": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk4": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Base64+InputFields1",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "GetEAN1": {
+      "main": [
+        [
+          {
+            "node": "ProductFields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetSKU1": {
+      "main": [
+        [
+          {
+            "node": "GetEAN1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Base64+InputFields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Base64+InputFields1": {
+      "main": [
+        [
+          {
+            "node": "ProductFields",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "GetSKU1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Base64+InputFields1",
+            "type": "main",
+            "index": 2
+          },
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)1": {
+      "main": [
+        [
+          {
+            "node": "Kategorien",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "KategorieTableID": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kategorien": {
+      "main": [
+        [
+          {
+            "node": "Convert to File2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ArtikelAttribute": {
+      "main": [
+        [
+          {
+            "node": "Convert to File4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attributes_Armband": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attributes_Brosche": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attributes_Kette": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "attributes_Ohrring": {
+      "main": [
+        [
+          {
+            "node": "NormalizeDefault",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetAttributeValues": {
+      "main": [
+        [
+          {
+            "node": "ValidateAttribut",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ProductFields": {
+      "main": [
+        [
+          {
+            "node": "KategorieTableID",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Analyze an image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ArtikelStammdaten": {
+      "main": [
+        [
+          {
+            "node": "Convert to File3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FilterRequiredAttributes": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "timezone": "Europe/Berlin",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "547fb656-14df-4194-a702-90db97849188",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7e14ce79ef42e9d0885ac7081d24c5e7169d2872524ed73d564a1226e586c640"
+  },
+  "id": "fSBLc1eLogfowDwr",
+  "tags": []
+}

@@ -1,0 +1,125 @@
+﻿id,Attribute_name,Attribute_type,Attribute_format,allowed_values,JTL_group,description,Beschreibung_deutsch,Kategorie,createdAt,updatedAt
+11,Kurzbeschreibung_Kaufland,general,multi_line_text,,,Provides a comma separated list of keywords based on product main description and provided images.,"Bietet eine durch Kommas getrennte Liste von such- und verkaufsrelevanten Schlüsselwörtern für Online-Marktplätze.
+Die Keywords sollen drei Bereiche abdecken:
+1) Produktart und Material (z. B. Seidentuch, Halstuch, Seidentuch Damen, Nickituch)
+2) Motiv, Design und Stil basierend auf den sichtbaren Merkmalen
+3) Zielgruppe und typische Verwendung (z. B. Damenaccessoire, Modeaccessoire, Geschenk)
+
+Verwende gängige, häufig gesuchte Begriffe, wie sie auf Plattformen wie Amazon, Otto oder Kaufland üblich sind.
+Keine vollständigen Sätze, nur einzelne Schlüsselwörter oder kurze Wortgruppen.
+",all,2025-12-29T20:44:48.915Z,2026-01-18T19:04:24.422Z
+17,Farbe,jtl,single_line_text,,Artikel,"Indicates the color of the product. Determine the color based on the product's primary visual appearance. Use standard color names and avoid subjective interpretations. If the color cannot be accurately identified, return null.","Gib einen Farbnamen für das Produkt anhand der dominant colors an. Farbnamen können auch zusammengesetzt sein wie z.B. grün-rot-schwarz. Verwende maximal 3 Farben.
+Vermeiden Sie subjektive Interpretationen.
+Geben Sie nur dann null zurück, wenn keine Farbe visuell erkennbar ist.",all,2025-12-29T20:44:48.915Z,2026-01-18T19:04:30.556Z
+20,Besondere Merkmale,jtl,single_line_text,,unicorn2-OttoMarket,"Indicates unique characteristics or functionalities of the product. Derive the value from product specifications, technical sheets, or manufacturer documentation. Ensure the description is concise and factual, focusing on distinctive aspects. Use complete sentences and avoid subjective language. If reliable information is unavailable, return null.","Gib eine sehr kurze, sachliche Beschreibung besonderer Merkmale an.
+Nutze nur klar belegbare Eigenschaften aus Produktkontext oder sichtbaren Details.
+Keine Werbesprache, keine Aufzählungen, kein Marketing.
+Wenn keine besonderen Merkmale eindeutig ableitbar sind, gib null zurück.
+Die Länge darf 70 Zeichen nicht überschreiten.",all,2025-12-29T20:44:48.915Z,2026-02-03T22:02:54.880Z
+21,Optik_ai,jtl,single_line_text,,unicorn2-OttoMarket,"Represents the visual appearance and color pattern of the product. The value should be derived from the product's physical characteristics, focusing on dominant colors and patterns. Allowed values include descriptive terms for colors and patterns, formatted in a concise manner. If the color pattern cannot be determined reliably, return null instead of making assumptions.","Stellt das visuelle Erscheinungsbild und das Farbmuster des Produkts dar. Der Wert sollte sich aus den physischen Eigenschaften des Produkts ableiten und sich auf die dominierenden Farben und Muster konzentrieren. Zulässige Werte umfassen beschreibende Begriffe für Farben und Muster, die knapp formuliert sind. Wenn das Farbmuster nicht zuverlässig bestimmt werden kann, geben Sie stattdessen null zurück, statt Vermutungen anzustellen.",all,2025-12-29T20:44:48.915Z,2026-01-18T19:04:40.295Z
+24,Grundfarbe,jtl,single_line_text,"lilla, gelb, natur, schwarz, grün, silberfarben, transparent, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",unicorn2-OttoMarket,,"Gibt die Farbe des Produkts an. Bestimmen Sie die Farbe anhand der main_color. Der Wert muss aus der vordefinierten Farbliste stammen: lilla, gelb, natur, schwarz, grün, silberfarben, transparent, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa. Wenn die dominant_color nicht in der Liste oben vorkommt, wähle eine ähnliche Farbe oben aus der Liste. Wenn die Farbe nicht genau bestimmt werden kann, geben Sie null zurück.",all,2026-01-02T14:13:03.448Z,2026-01-18T19:04:57.819Z
+30,"Verschlussart
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Art des Verschlusses des Produkts an.
+Verwende kurze, sachliche und eindeutig verständliche Bezeichnungen, durch Kommas getrennt.
+Nutze gängige, standardisierte Begriffe für Verschlussmechanismen.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Verschlussart.","armband, kette, ohrring, brosche",2026-01-18T19:44:21.601Z,2026-01-18T21:07:59.788Z
+32,"Materialfarbe
+",jtl,single_line_text,,"SXC-OttoMarket
+",,"Gib die Farbe des Materials bzw. der Materialoberfläche an.
+Verwende kurze, sachliche Farbangaben, durch Kommas oder Bindestriche getrennt.
+Nutze standardisierte, allgemein verständliche Farbbezeichnungen (z. B. metallfarben, silberfarben, gelbgoldfarben).
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Materialfarbe.","armband, kette, ohrring, brosche",2026-01-18T19:45:56.265Z,2026-01-18T21:10:09.794Z
+33,"Perlenfarbe
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Farbe der verwendeten Perlen an.
+Verwende kurze, sachliche Farbangaben, durch Kommas getrennt.
+Nutze allgemein verständliche, visuell beschreibende Farbbezeichnungen.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Perlenfarbe.","armband, kette, ohrring, brosche",2026-01-18T19:48:25.021Z,2026-01-18T21:12:22.318Z
+36,"Applikationen
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib an, welche Applikationen oder aufgesetzten Elemente am Produkt vorhanden sind.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze allgemein verständliche, standardisierte Bezeichnungen für Applikationen.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Applikationen.","armband, kette, ohrring, brosche",2026-01-18T19:57:41.506Z,2026-01-18T21:14:29.753Z
+37,"Eigenschaften Kette
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die funktionalen und konstruktiven Eigenschaften der Kette an.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze allgemein verständliche, standardisierte Begriffe für Ketteneigenschaften.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Eigenschaften der Kette.",kette,2026-01-18T19:58:27.321Z,2026-01-18T21:15:23.933Z
+38,"Eigenschaften Ohrschmuck
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die funktionalen, konstruktiven oder tragerelevanten Eigenschaften des Ohrschmucks an.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze allgemein verständliche, standardisierte Begriffe für Eigenschaften von Ohrschmuck.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Eigenschaften des Ohrschmucks.",ohrring,2026-01-18T19:59:10.893Z,2026-01-18T21:20:12.784Z
+43,meta_hero_message:custom,jtl,single_line_text,,Shopify-Metafields,,"Formuliere eine kurze, sachliche Kernbotschaft zum Produkt auf Basis von Material, Stil und Verwendungszweck.
+Die Aussage soll neutral, hochwertig und präzise sein (z. B. „Light cashmere scarf for everyday wear“).
+Vermeide Marketing-Superlative, Emotionen oder subjektive Bewertungen.
+Maximal ein Satz.
+Gib nur dann null zurück, wenn aus den Produktinformationen keine klare Kernaussage ableitbar ist.",all,2026-01-24T17:53:09.910Z,2026-01-24T18:05:26.273Z
+19,de_key1,jtl,multi_line_text,,Amazon Keywords,"Represents the primary keyword for Amazon search optimization. Derive its value from the most relevant and frequently searched terms related to the product. The value should be a concise phrase or word, adhering to Amazon's keyword guidelines. If a suitable keyword cannot be determined, return null.","Repräsentiert die Schlüsselwörter für die Amazon-Suchoptimierung. Leiten Sie den Wert aus den relevantesten und am häufigsten gesuchten Begriffen ab, die mit dem Produkt zusammenhängen. Der Wert sollte eine knappe Phrase oder ein einzelnes Wort sein und den Richtlinien für Amazon-Keywords entsprechen. Bietet eine durch Kommas getrennte Liste von such- und verkaufsrelevanten Schlüsselwörtern für Online-Marktplätze.
+Die Keywords sollen drei Bereiche abdecken:
+1) Produktart und Material (z. B. Seidentuch, Halstuch, Seidentuch Damen, Nickituch)
+2) Motiv, Design und Stil basierend auf den sichtbaren Merkmalen
+3) Zielgruppe und typische Verwendung (z. B. Damenaccessoire, Modeaccessoire, Geschenk)
+
+Verwende gängige, häufig gesuchte Begriffe, wie sie auf Plattformen wie Amazon, Otto oder Kaufland üblich sind.
+Keine vollständigen Sätze, nur einzelne Schlüsselwörter oder kurze Wortgruppen.
+",all,2025-12-29T20:44:48.915Z,2026-01-18T19:04:33.812Z
+23,Kaufland_Farbe,jtl,single_line_text,"Aqua, Beige, Blau, Blaugrün, bordeaux, Braun, Bronze, Bunt, Creme, Cyan, Dunkelblau, Dunkelbraun, Dunkelgelb, Dunkelgrau, dunkelgrün, Dunkelorange, Dunkelrosa, Dunkelrot, Dunkelviolett, Fuchsia, Gelb, Gold, Grau, Grün, Hellblau, Hellbraun, Hellgelb, Hellgrau, Hellorange, Hellrosa, Hellrot, Hellviolett, Himmelblau, Kastanienbraun, Königsblau, Koralle, Kupfer, Lila, Limette, Magenta, Marine, milchig, Naturbelassen, Navy, Ocker, Olive, Orange, Petrol, Pink, Rosa, Rot, Royalblau, Schwarz, Silber, Taupe, Transparent, Türkis, Violett, Weiß",Kaufland,"Indicates the color of the product. Determine the color by visually inspecting the product or referring to manufacturer specifications. The value must be one from the predefined list of colors: Aqua, Beige, Blau, Blaugrün, bordeaux, Braun, Bronze, Bunt, Creme, Cyan, Dunkelblau, Dunkelbraun, Dunkelgelb, Dunkelgrau, dunkelgrün, Dunkelorange, Dunkelrosa, Dunkelrot, Dunkelviolett, Fuchsia, Gelb, Gold, Grau, Grün, Hellblau, Hellbraun, Hellgelb, Hellgrau, Hellorange, Hellrosa, Hellrot, Hellviolett, Himmelblau, Kastanienbraun, Königsblau, Koralle, Kupfer, Lila, Limette, Magenta, Marine, milchig, Naturbelassen, Navy, Ocker, Olive, Orange, Petrol, Pink, Rosa, Rot, Royalblau, Schwarz, Silber, Taupe, Transparent, Türkis, Violett, Weiß, If the color cannot be accurately determined, return null.","Gibt die Farbe des Produkts an. Bestimmen Sie die Farbe anhand der main_color. Der Wert muss aus der vordefinierten Farbliste stammen: Aqua, Beige, Blau, Blaugrün, bordeaux, Braun, Bronze, Bunt, Creme, Cyan, Dunkelblau, Dunkelbraun, Dunkelgelb, Dunkelgrau, dunkelgrün, Dunkelorange, Dunkelrosa, Dunkelrot, Dunkelviolett, Fuchsia, Gelb, Gold, Grau, Grün, Hellblau, Hellbraun, Hellgelb, Hellgrau, Hellorange, Hellrosa, Hellrot, Hellviolett, Himmelblau, Kastanienbraun, Königsblau, Koralle, Kupfer, Lila, Limette, Magenta, Marine, milchig, Naturbelassen, Navy, Ocker, Olive, Orange, Petrol, Pink, Rosa, Rot, Royalblau, Schwarz, Silber, Taupe, Transparent, Türkis, Violett, Weiß, Wenn die dominant_color nicht in der Liste oben vorkommt, wähle eine ähnliche Farbe oben aus der Liste. Wenn die Farbe nicht genau bestimmt werden kann, geben Sie null zurück.",all,2025-12-29T20:44:48.915Z,2026-01-18T19:04:54.528Z
+28,"Farbsteinart
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Art des verwendeten Farbsteins bzw. der farbgebenden Elemente des Produkts an.
+Verwende ausschließlich kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze standardisierte, allgemein verständliche Bezeichnungen.
+Mach kenntlich, wenn es sich um synthetische oder künstliche Materialien handelt.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Steinart.","armband, kette, ohrring, brosche",2026-01-18T19:41:13.629Z,2026-01-18T21:03:13.360Z
+25,Besondere Merkmale,jtl,single_line_text,,unicorn2-OttoMarket,,"Erstelle eine stichwortartige Beschreibung der besonderen Merkmale des Produkts im Stil von OTTO.
+Nenne Material, Zielgruppe, Designform, Verzierungen, Stilrichtung, Kombinationsmöglichkeiten (z. B. Kleidung, Schuhe) sowie passende Anlässe.
+Verwende kommagetrennte Begriffe, keine vollständigen Sätze, keine Emojis.
+Die Beschreibung soll verkaufsfördernd, klar und präzise sein.
+Wiederhole Begriffe nur, wenn sie für die Auffindbarkeit relevant sind.",all,2026-01-18T19:35:28.219Z,2026-01-18T20:56:41.306Z
+26,Ausführung,jtl,single_line_text,,"SXC-OttoMarket
+",,"Beschreibe die Ausführung des Produkts anhand seiner sichtbaren und materiellen Eigenschaften.
+Gib an, ob das Produkt besondere Ausstattungsmerkmale, Besätze, Applikationen, Muster oder Verzierungen aufweist oder bewusst schlicht ausgeführt ist.
+Verwende kurze, präzise Stichwörter, durch Kommas getrennt.
+Keine vollständigen Sätze, keine Emojis, keine werblichen Formulierungen.
+Nutze nur Merkmale, die eindeutig aus den Produktdaten oder der visuellen Erscheinung ableitbar sind.",all,2026-01-18T19:37:02.802Z,2026-01-18T20:59:22.972Z
+35,"Materialoberfläche
+",jtl,single_line_text,,"SXC-OttoMarket
+",,"Gib die Oberflächenbeschaffenheit bzw. Veredelung des Materials an.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze gängige, allgemein verständliche Bezeichnungen für Oberflächen und Beschichtungen.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Materialoberfläche.","armband, kette, ohrring, brosche",2026-01-18T19:56:10.270Z,2026-01-18T21:13:23.596Z
+39,"Kettenart
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Art der Kette bzw. die Kettenform an.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze gängige, allgemein verständliche Bezeichnungen für Kettenarten.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Kettenart.",kette,2026-01-18T20:00:09.530Z,2026-01-18T21:17:01.005Z
+42,"Eigenschaften Anhänger
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die funktionalen und konstruktiven Eigenschaften des Anhängers an.
+Verwende kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze allgemein verständliche, standardisierte Begriffe für Anhängereigenschaften.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Eigenschaften des Anhängers.",kette,2026-01-18T20:02:18.854Z,2026-01-18T21:18:40.735Z
+29,"Perlenart
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Art der verwendeten Perlen an.
+Verwende ausschließlich kurze, sachliche Stichwörter, durch Kommas getrennt.
+Nutze standardisierte, allgemein verständliche Bezeichnungen.
+Mach kenntlich, ob es sich um natürliche, gezüchtete oder synthetische Perlen handelt.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Perlenart.","armband, kette, ohrring, brosche",2026-01-18T19:43:03.824Z,2026-01-18T21:06:42.850Z
+31,"Farbe Farbstein
+",jtl,single_line_text,,"unicorn2-OttoMarket
+",,"Gib die Farbe bzw. die Farbtöne des verwendeten Farbsteins an.
+Verwende ausschließlich kurze, sachliche Farbangaben, durch Kommas oder Bindestriche getrennt.
+Nutze allgemein verständliche, visuell beschreibende Farbbezeichnungen.
+Keine vollständigen Sätze, keine Werbesprache, keine Zusatzinformationen außerhalb der Farbangabe.","armband, kette, ohrring",2026-01-18T19:45:09.925Z,2026-01-18T21:09:08.373Z
+27,"Wissenswertes
+",jtl,single_line_text,,unicorn2-OttoMarket,,"Erstelle einen sachlichen Hinweistext mit zusätzlichen, für Kundinnen und Kunden relevanten Informationen zum Produkt.
+Nutze neutrale, faktenbasierte Formulierungen ohne Werbesprache.
+Weisen bei Bedarf auf natürliche Materialeigenschaften, mögliche Abweichungen in Farbe, Form oder Struktur sowie auf rechtlich oder inhaltlich notwendige Hinweise hin (z. B. fehlende wissenschaftliche Nachweise, keine medizinische Wirkung, kein Ersatz für ärztlichen Rat).
+Der Text darf aus einem oder mehreren kurzen Sätzen bestehen und soll klar, verständlich und rechtlich unkritisch formuliert sein.",all,2026-01-18T19:38:03.109Z,2026-01-18T21:01:29.828Z

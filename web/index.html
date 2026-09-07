@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Studio · AI product content</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a href="#create" class="logo"><span class="logo-mark">p<span>·</span></span><span>product<br><b>studio</b></span></a>
+    <div class="workspace">MAYTREE WORKSPACE <span>LOCAL</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#create" data-nav="create"><span>＋</span> Create product</a>
+      <a href="#products" data-nav="products"><span>▤</span> Product library <small id="product-count">0</small></a>
+      <div class="nav-label">CONFIGURATION</div>
+      <a href="#rules" data-nav="rules"><span>≡</span> Attribute rules</a>
+      <a href="#categories" data-nav="categories"><span>◇</span> Categories</a>
+      <a href="#settings" data-nav="settings"><span>⚙</span> Platforms & settings</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="live-dot"></span> Local storage<br><small>Review first. Export with confidence.</small><div class="phase">PHASE 01 <span>CSV export</span></div></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><span>Commerce tools <span class="slash">/</span> <b id="breadcrumb">Create product</b></span><span id="provider-status" class="provider">Connecting…</span></header>
+    <main id="app"><div class="empty">Loading your workspace…</div></main>
+  </div>
+  <div id="notice" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

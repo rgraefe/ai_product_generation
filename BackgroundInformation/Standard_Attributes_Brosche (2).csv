@@ -1,0 +1,29 @@
+﻿id,attribute_group,attribute_name,attribute_value,createdAt,updatedAt
+1,AmazonLister,AMZ_Marke,MayTree,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+2,unicorn2-OttoMarket,Anlässe,"Frühlingsmode, Abendmode, Casualmode, Partymode",2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+3,unicorn2-OttoMarket,Anzahl Teile,1,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+4,Shopify-Attribute,barcode_type,EAN,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+5,Artikel,Brand,MayTree,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+6,unicorn2-OttoMarket,Geschlecht,weiblich,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+7,Shopify-Metafields,meta_age_group:mm-google-shopping,Adult,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+8,Shopify-Metafields,meta_condition:mm-google-shopping,New,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+9,Shopify-Metafields,meta_gender:mm-google-shopping,female,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+10,Shopify-Attribute,product_type,Brosche,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+11,unicorn2-OttoMarket,Set-Info,-,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+12,unicorn2-OttoMarket,Set-Typ,Stück,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+13,unicorn2-OttoMarket,Zielgruppe,Erwachsene,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+14,SXC-OttoMarket,Zielgruppe1,Erwachsene,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+15,Shopify-Metafields,meta_season:custom,all_year,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+16,Shopify-Metafields,meta_use_case:custom,"business, evening, ceremony, gift, outerwear, statement",2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+17,Shopify-Metafields,meta_product_category:custom,brooches,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+18,JTL,Hersteller,Intergate,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+19,JTL,Warengruppe,Broschen,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+20,JTL,Herkunftsland,CN,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+21,JTL,TARIC-Code,7117190000,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+22,JTL,Verkaufskanal [Amazon Lister (DE)]: Verkaufskanal aktiv,Y,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+23,JTL,Verkaufskanal [Kaufland (Kaufland.de)]: Verkaufskanal aktiv,Y,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+24,JTL,Verkaufskanal [TikTok Shop (7496185151326161614)]: Verkaufskanal aktiv,Y,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+25,JTL,Verkaufskanal [Maytree]: Verkaufskanal aktiv,Y,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+26,JTL,Verkaufskanal [Intergate Consulting & Trade GmbH (1081109)]: Verkaufskanal aktiv,Y,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+27,JTL,Steuerklasse,normaler steuersatz,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
+28,JTL,Steuersatz in%,19,2026-02-08T16:19:37.140Z,2026-02-08T16:19:37.140Z
